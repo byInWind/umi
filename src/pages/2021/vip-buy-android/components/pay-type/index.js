@@ -1,5 +1,5 @@
 import React from 'react'
-import PropType from 'prop-types'
+// import PropType from 'prop-types'
 import { collectEvent, greaterThanCurrentVersion } from '../../../../../utils/utils'
 import { Icon, Modal } from 'antd-mobile'
 import { imgConfig, PAY_TYPE, PAY_TYPE_KEY } from '../../constants'
@@ -71,13 +71,13 @@ const VipPayType = ({ setPayType, setPriceList, wechatPriceList, alipayPriceList
   )
 }
 
-VipPayType.propTypes = {
-  wechatPriceList: PropType.Array,
-  alipayPriceList: PropType.Array,
-  payType: PropType.Array,
-  setPayType: PropType.func,
-  setPriceList: PropType.func,
-  setCurrentPrice: PropType.func,
-}
+// VipPayType.propTypes = {
+//   wechatPriceList: PropType.Array,
+//   alipayPriceList: PropType.Array,
+//   payType: PropType.Array,
+//   setPayType: PropType.func,
+//   setPriceList: PropType.func,
+//   setCurrentPrice: PropType.func,
+// }
 
 export default VipPayType

@@ -72,7 +72,6 @@ const App = () => {
       method: 'get',
       headers: Object.assign({}, headersParams, { 'Content-Type': 'application/json' }),
     })
-      .then((res) => res.json())
       .then(({ data }) => {
         setLoading(false)
         setUserStatus(data)
@@ -84,7 +83,6 @@ const App = () => {
       method: 'get',
       headers: Object.assign({}, headersParams, { 'Content-Type': 'application/json' }),
     })
-      .then((res) => res.json())
       .then(({ data }) => {
         setVipRenew(data)
       })
@@ -97,7 +95,6 @@ const App = () => {
       method: 'get',
       headers: Object.assign({}, headersParams, { 'Content-Type': 'application/json' }),
     })
-      .then((res) => res.json())
       .then((res) => {
         if (res.status !== 200) return
 
@@ -192,7 +189,6 @@ const App = () => {
       headers: Object.assign({}, headersParams, { 'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8' }),
       body: queryString(params),
     })
-      .then((res) => res.json())
       .then((res) => {
         if (res.status === 200) {
           payPageTemer = setInterval(() => {
@@ -269,7 +265,6 @@ const App = () => {
       method: 'get',
       headers: Object.assign({}, headersParams, { 'Content-Type': 'application/json' }),
     })
-      .then((res) => res.json())
       .then((res) => {
         if (res.status !== 200) return
         if (res.data.status === '支付完成') {
