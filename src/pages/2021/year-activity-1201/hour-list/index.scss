@@ -1,0 +1,270 @@
+body {
+  background: #050302;
+}
+.hour {
+  background: #050302 url(https://pic.finkapp.cn/ju4VnJsR00NqRPIj7cLlMQ) no-repeat;
+  background-size: 100%;
+  padding: 11rem 0 2.186667rem 0;
+  &-title {
+    width: 7.650667rem;
+    height: 1.401067rem;
+    margin: 0 auto;
+    img {
+      display: block;
+      overflow: hidden;
+    }
+  }
+  &-time {
+    background: url(../../../../../public/images/2021/year-activity-1201/hourTime.png) no-repeat center;
+    width: 9.52rem;
+    height: 1.066667rem;
+    background-size: 9.52rem 1.066667rem;
+    margin: 0 auto;
+    margin-top: 0.266667rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.266667rem;
+    p:nth-child(1) {
+      width: 1.44rem;
+      height: 0.853333rem;
+    }
+    p:nth-child(2) {
+      width: 2.466667rem;
+      font-size: 0.373333rem;
+      color: #fde8b0;
+      font-weight: 600;
+      margin-left: 0.133333rem;
+      span {
+        color: #fd3b28;
+      }
+    }
+    p:nth-child(3) {
+      flex: 1;
+      font-size: 0.32rem;
+      color: #fde8b0;
+      overflow: hidden;
+    }
+    .text {
+      padding: 0 5.333333rem;
+    }
+  }
+  &-list {
+    padding: 0.133333rem 0.266667rem 0 0.266667rem;
+    min-height: 5.333333rem;
+    li {
+      height: 1.653333rem;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      border-bottom: 1px solid #654e2f;
+      p:nth-child(1) {
+        font-size: 0.373333rem;
+        color: #f2d090;
+        font-weight: 600;
+        width: 1.2rem;
+        text-align: center;
+        margin-right: 0.266667rem;
+      }
+      p:nth-child(2) {
+        width: 1.226667rem;
+        height: 1.226667rem;
+        border-radius: 100%;
+        margin-right: 0.533333rem;
+        background-image: linear-gradient(180deg, #ffde96 0%, #a96a2d 100%);
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          border-radius: 100%;
+          width: 1.12rem;
+          height: 1.12rem;
+          overflow: hidden;
+          display: block;
+        }
+      }
+      p:nth-child(3) {
+        font-size: 0.32rem;
+        color: #f2d090;
+        width: 3.2rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        span {
+          display: block;
+        }
+        span:nth-child(2) {
+          margin-top: 0.133333rem;
+        }
+      }
+      p:nth-child(4) {
+        flex: 1;
+        padding-right: 0.266667rem;
+        text-align: right;
+        img {
+          width: 1.946667rem;
+          height: 0.685867rem;
+          display: block;
+          overflow: hidden;
+          float: right;
+        }
+      }
+    }
+    li:last-child {
+      border: none;
+    }
+    li:nth-child(1),
+    li:nth-child(2),
+    li:nth-child(3) {
+      background: url(../../../../../public/images/2021/year-activity-1201/hourItem.png) no-repeat center;
+      background-size: 9.52rem 2.186667rem;
+      height: 2.186667rem;
+      border: none;
+      margin-top: 0.133333rem;
+      p:nth-child(2) {
+        width: 1.52rem;
+        height: 1.52rem;
+        border-radius: 100%;
+        margin-right: 0.266667rem;
+        background-image: linear-gradient(180deg, #ffde96 0%, #a96a2d 100%);
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          border-radius: 100%;
+          width: 1.42rem;
+          height: 1.42rem;
+          overflow: hidden;
+          display: block;
+        }
+      }
+      p:nth-child(3) {
+        span:nth-child(1) {
+          font-size: 0.373333rem;
+          font-weight: 600;
+        }
+      }
+    }
+    li:nth-child(1) {
+      p:nth-child(1) {
+        background: url(../../../../../public/images/2021/year-activity-1201/ranking1.png) no-repeat center;
+        background-size: 0.933333rem 0.849867rem;
+        height: 0.849867rem;
+        text-indent: -9999px;
+      }
+    }
+    li:nth-child(2) {
+      p:nth-child(1) {
+        height: 0.849867rem;
+        background: url(../../../../../public/images/2021/year-activity-1201/ranking2.png) no-repeat center;
+        background-size: 0.933333rem 0.849867rem;
+        text-indent: -9999px;
+      }
+    }
+    li:nth-child(3) {
+      p:nth-child(1) {
+        height: 0.849867rem;
+        background: url(../../../../../public/images/2021/year-activity-1201/ranking3.png) no-repeat center;
+        background-size: 0.933333rem 0.849867rem;
+        text-indent: -9999px;
+      }
+    }
+  }
+  &-userown {
+    background: url(../../../../../public/images/2021/year-activity-1201/ownBg.png) no-repeat center;
+    background-size: 10.053333rem 2.186667rem;
+    height: 2.186667rem;
+    width: 10.053333rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    p:nth-child(1) {
+      font-size: 0.32rem;
+      color: #ffedcb;
+      width: 2rem;
+      text-align: center;
+    }
+    p.num:nth-child(1) {
+      font-size: 0.586667rem;
+      color: #ffedcb;
+      width: 2rem;
+      text-align: center;
+    }
+    p:nth-child(2) {
+      width: 1.52rem;
+      height: 1.52rem;
+      border-radius: 100%;
+      margin-right: 0.266667rem;
+      background-image: linear-gradient(180deg, #ffde96 0%, #a96a2d 100%);
+      padding: 0;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        border-radius: 100%;
+        width: 1.42rem;
+        height: 1.42rem;
+        overflow: hidden;
+        display: block;
+      }
+    }
+    p:nth-child(3) {
+      font-size: 0.4rem;
+      color: #ffedcb;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      span {
+        display: block;
+        em {
+          color: #ff4040;
+        }
+      }
+      span:nth-child(2) {
+        margin-top: 0.193333rem;
+        font-size: 0.32rem;
+        // transform:scale(0.8) translate(-22px,0px);
+      }
+    }
+    p:nth-child(4) {
+      width: 1.546667rem;
+      height: 0.8rem;
+      position: absolute;
+      right: 0.266667rem;
+      img {
+        width: 1.546667rem height 0.8rem;
+        display: block;
+        overflow: hidden;
+      }
+    }
+  }
+  &-noList {
+    height: 5.333333rem;
+    text-align: center;
+    &__img1 {
+      width: 10.053333rem;
+      height: 0.586667rem;
+      margin-top: 0.906667rem;
+    }
+    &__img2 {
+      width: 4.053333rem;
+      height: 1.573333rem;
+      margin-top: 1.146667rem;
+      opacity: 0.5;
+    }
+  }
+}
+.am-notice-bar {
+  background: transparent;
+  color: #fde8b0;
+}
+.am-notice-bar-content {
+  margin: auto 0;
+}

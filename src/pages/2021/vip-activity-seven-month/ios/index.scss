@@ -1,0 +1,249 @@
+body {
+    position: relative;
+    color: white;
+    font-family: Ping Fang SC;
+}
+
+.ios_text{
+    color:#d54f65;
+    font-size: 12px;
+    padding: 13px 0 8px;
+    text-align: center;
+    margin-left: 0.8rem;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+.broadcast_text_span {
+    display: inline-block;
+    padding: 0 4px;
+}
+
+.broadcast_text {
+    position: absolute;
+    top: 10.15rem;
+    width: 100%;
+    text-align: center;
+    padding-left: 0.8rem;
+    color: #fefefe;
+    font-size: 12px;
+    background-color: transparent;
+}
+.progress_box{
+    position: absolute;
+    right: 0;
+    top: 5rem;
+    width: 3rem;
+    .progress_text{  
+        font-weight: bold;
+        line-height: 1rem;
+        font-size: 15px;
+        color: black;
+        position: absolute;
+        top: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+}
+.center {
+    position: absolute;
+    top: 11.2rem;
+
+    .center_box {
+        position: relative;
+        z-index: 2;
+
+        .centerBg {
+            position: absolute;
+            top: 0;
+            z-index: -1;
+            width: 90%;
+            left: 5%;
+        }
+    }
+
+    .btn_buy {
+        width: 80%;
+    }
+}
+
+.tab_box {
+    position: relative;
+    width: 92%;
+
+    .tab {
+        position: absolute;
+        font-size: 0;
+        width: 100%;
+        top: 1rem;
+
+        .change_box {
+            width: 3.9rem;
+            margin-left: 0.6rem;
+            display: inline-block;
+            height: 3.6rem;
+        }
+    }
+}
+
+.none {
+    display: none;
+}
+
+.active {
+    display: block !important;
+}
+
+
+.time_text {
+    padding-top: 0.3rem;
+    text-align: center;
+    font-size: 12px;
+}
+
+.vip-buy {
+    &__payModel {
+        color: #404040;
+        font-size: .373333rem;
+        line-height: 0.55555rem;
+        font-weight: 500;
+        margin: .4rem .626667rem .4rem .672rem;
+
+        &-type {
+            float: left;
+            margin-right: .352267rem;
+
+            img {
+                width: .5224rem;
+                height: .5224rem;
+            }
+        }
+
+        &-item {
+            float: right;
+        }
+
+        &-title {
+            text-align: center;
+            color: #1A1A1A;
+            font-size: .426667rem;
+            font-weight: 500;
+        }
+    }
+
+    &__pay {
+        color: white;
+        font-size: .373333rem;
+        line-height: 0.55555rem;
+        font-weight: 500;
+        padding: 0.3rem 0.9rem 0.1rem;
+
+        &-type {
+            float: left;
+        }
+
+        &-item {
+            float: right;
+        }
+
+        &-title {
+            text-align: center;
+            font-size: .426667rem;
+            font-weight: 500;
+        }
+    }
+}
+
+.toggle_btn_box {
+    position: relative;
+
+    .toggle_btn {
+        position: absolute;
+        top: 1.3rem;
+        left: 3rem;
+        width: 0.5rem;
+        height: 0.5rem;
+    }
+}
+
+.active_flex {
+    display: flex !important;
+}
+
+.toast {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+    z-index: 999;
+    display: none;
+
+    .toast-img-box {
+        width: 90%;
+        position: relative;
+        left: 5%;
+
+        .openBtn {
+            position: absolute;
+            top: 5.8rem;
+            left: 2.8rem;
+            width: 3.3rem;
+            height: 1.2rem;
+        }
+
+        .clostBtn {
+            position: absolute;
+            width: 0.8rem;
+            height: 0.8rem;
+            top: 0.5rem;
+            right: 0.6rem;
+        }
+
+        .inviteToWechatBox {
+            position: absolute;
+            width: 7.3rem;
+            bottom: 3.5rem;
+            left: 0.8rem;
+            height: 2rem;
+        }
+        .inviteToWechatBtn {
+            position: absolute;
+            width: 3.0rem;
+            bottom: 1.9rem;
+            left: 1rem;
+        }
+
+        .inviteToWechatMomentsBtn {
+            position: absolute;
+            width: 3.0rem;
+            bottom: 1.9rem;
+            left: 4.7rem;
+        }
+
+        .boxResultText {
+            position: absolute;
+            top: 1rem;
+            font-weight: bold;
+            font-size: 14px;
+            color: #404040;
+            width: 100%;
+            line-height: 1.4;
+            text-align: center;
+        }
+
+        .boxResultImg {
+            position: absolute;
+            top: 4.5rem;
+            left: 3.5rem;
+            width: 2rem;
+            z-index: 999;
+        }
+    }
+}

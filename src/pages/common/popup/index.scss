@@ -1,0 +1,32 @@
+body,
+html {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  background: rgba(0, 0, 0, 0.3) !important;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3) !important;
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.pasteboard-close {
+  position: absolute;
+  width: 0.7rem;
+  top: -1.5rem;
+  right: -0.4rem;
+}
+
+.pasteboard-copy {
+  margin: 0 10%;
+  position: relative;
+  &__content {
+    border-radius: 0.444444rem;
+    display: block;
+    overflow: hidden;
+  }
+}
+
+.am-button.am-button-active {
+  background-color: #ff4040;
+}

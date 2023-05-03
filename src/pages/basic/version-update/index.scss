@@ -1,0 +1,27 @@
+body {
+  background: #f7f7f7;
+}
+.version {
+  padding: 0 1.066667rem;
+  &-icon {
+    width: 2.133333rem;
+    height: 2.133333rem;
+    display: block;
+    margin: 0.853333rem auto 0 auto;
+  }
+  &-text {
+    font-size: 0.373333rem;
+    color: #1a1a1a;
+    line-height: 0.773333rem;
+    padding: 0.8rem 0;
+  }
+  &-button {
+    height: 1.226667rem;
+    line-height: 1.226667rem;
+    background: #ff4040;
+    border-radius: 0.613333rem;
+    font-size: 0.426667rem;
+    text-align: center;
+    color: #fff;
+  }
+}

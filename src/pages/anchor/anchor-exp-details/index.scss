@@ -1,0 +1,85 @@
+
+.exp{
+    padding-top:1.386667rem; 
+        &-head{
+            height: 1.386667rem;
+            display:flex;
+            align-items: center;
+            position:fixed;
+            top: 0;
+            left:0;
+            width: 100%;
+            background:#fff;
+            padding-left: .533333rem;
+            z-index:999;
+        }
+    &-list{
+       &__isLoading{
+           height: 1.333333rem;
+           line-height: 1.333333rem;
+           font-size: .373333rem;
+           color: #1a1a1a;
+           text-align: center;
+       }
+       li {
+        border-bottom: 1px solid #F2F2F2;
+        height: 1.706667rem;
+        padding: .266667rem .533333rem;
+        p {
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: .373333rem;
+            color:#1a1a1a;
+        }
+        p:last-child {
+            font-size: .32rem;
+            color: #a9a9a9;
+            margin-top: .32rem;
+        }
+       }
+    }
+}
+.am-list-item .am-list-line .am-list-extra {
+    flex-basis:100%!important;
+    color: #1a1a1a;
+    font-size: .533333rem;
+    padding-right: .533333rem;
+    position:relative;
+}
+.am-list-item{
+    padding-left: 0!important;
+}
+.am-list-item .am-list-line .am-list-arrow {
+    background-image:none!important;
+}
+.am-list-item .am-list-line .am-list-extra:after{
+    position: absolute;
+    right: .08rem;
+    top: 50%;
+    content: '';            
+    display: block;            
+    width: .133333rem;            
+    height: .133333rem;  
+    margin-top: -0.08rem;          
+    border-right: .053333rem solid #1a1a1a;            
+    border-top: .053333rem solid #1a1a1a;            
+    -webkit-transform: rotate(135deg); /*箭头方向可以自由切换角度*/            
+    transform: rotate(135deg)
+}
+.am-pull-to-refresh-content-wrapper{
+    overflow:initial;
+}
+.am-pull-to-refresh-indicator{
+    font-size: .373333rem;
+}
+.am-list-footer{
+    padding:0;
+}
+.show {
+    display:block;
+}
+.hide{
+    display: none;
+}
+    

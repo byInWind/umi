@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="utf-8" />
+  <title>{{title}}</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,viewport-fit=cover">
+  {{!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" /> --}}
+  <meta name="format-detection" content="telephone=no" />
+  {{!-- <meta property='description' content='活动描述啥的'> --}}
+
+   <meta name="description" content="Object类，Java核心中的核心！" />
+ <meta name="author" content="东风玖哥，小灰" />
+
+
+ <meta property="og:title" content="漫画：Object类很大，你忍一下" />
+ <meta property="og:url" content="http://mp.weixin.qq.com/s?__biz=MzIxMjE5MTE1Nw==&amp;mid=2653230744&amp;idx=1&amp;sn=f713c92f58d200b1f830cb34381a55de&amp;chksm=8c986442bbefed542d77cef64d660cdb88c068e7ef6e77960d998aad7bb4933fce48d82d1c7c#rd" />
+ <meta property="og:image" content="http://mmbiz.qpic.cn/mmbiz_jpg/NtO5sialJZGqlI2Z5FxH6HVPR6yichoubqwFIibIetCcqW3le3TxG7DRLdBxUBTF1lWredS8GeUFN9sxvtpHx2DgA/0?wx_fmt=jpeg" />
+ <meta property="og:description" content="Object类，Java核心中的核心！" />
+ <meta property="og:site_name" content="微信公众平台" />
+ <meta property="og:type" content="article" />
+ <meta property="og:article:author" content="东风玖哥，小灰" />
+
+
+ <meta property="twitter:card" content="summary" />
+ <meta property="twitter:image" content="http://mmbiz.qpic.cn/mmbiz_jpg/NtO5sialJZGqlI2Z5FxH6HVPR6yichoubqwFIibIetCcqW3le3TxG7DRLdBxUBTF1lWredS8GeUFN9sxvtpHx2DgA/0?wx_fmt=jpeg" />
+ <meta property="twitter:title" content="漫画：Object类很大，你忍一下" />
+ <meta property="twitter:creator" content="东风玖哥，小灰" />
+ <meta property="twitter:site" content="微信公众平台" />
+ <meta property="twitter:description" content="Object类，Java核心中的核心！" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="/favicon.ico">
+</head>
+
+<script type="text/javascript">    
+(function(win, export_obj) {
+    win['TeaAnalyticsObject'] = export_obj;
+    if (!win[export_obj]) {
+        function _collect() {
+            _collect.q.push(arguments);
+        }
+        _collect.q = _collect.q || [];
+        win[export_obj] = _collect;            
+    }
+    win[export_obj].l = +new Date();
+})(window, 'collectEvent');
+</script>
+
+<script async src="https://lf3-data.volccdn.com/obj/data-static/log-sdk/collect/collect-autotrack-rangers-v4.1.54.js"></script>
+
+
+<body>
+  <div id="app"></div>
+  <script??? type="text/javascript">
+    window.CONFIG = {{#if config}}{{{config}}};{{else}}{};{{/if}}
+  </script???>
+  <script>
+
+    function getShareDetail(){
+      var sUserAgent = navigator.userAgent.toLowerCase();
+      var bIsAndroid = sUserAgent.match(/android/i) == "android";
+      var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+      var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+      
+      var message = { 
+        shareTitle: '分享标题测试',
+        shareDescription: '分享描述测试',
+        message: 'MessageHandler 方式',
+        shareImageUrl: 'https://pic.finkapp.cn/t/0vSx2cJQhzZqRPIj7cLlMQ?x-oss-process=image/resize,m_lfit,w_250/quality,q_70/format,jpeg',
+        url: 'https://pic.finkapp.cn/t/0vSx2cJQhzZqRPIj7cLlMQ?x-oss-process=image/resize,m_lfit,w_250/quality,q_70/format,jpeg'
+      };
+
+      
+      
+      if (bIsAndroid) {
+
+        AndroidAPP&&AndroidAPP.getShareDetail(JSON.stringify(message));
+        
+      } else if ( bIsIphoneOs || bIsIpad) {
+        window.webkit.messageHandlers.getShareDetail.postMessage(message);
+      }
+
+      return JSON.stringify(message)
+    }
+
+    getShareDetail()
+
+    var msg_link = 'https://finka-h5.wowkaka.cn/hd/2021/day-dream/pasteboard-copy'
+    var msg_title = '活动标题'
+    var msg_desc = '活动描述啥的变量'
+    var msg_cdn_url = 'https://pic.finkapp.cn/vm9YeNOXzoNqRPIj7cLlMQ'
+
+    const nodeEnv = window.CONFIG && window.CONFIG.nodeEnv || '';
+    window.collectEvent('init', {
+      app_id: nodeEnv === 'production' ? 10000010 : 10000011,
+      auto_report: true, //是否开启预置事件采集
+      report_channel: 'cn', //数据上报地址
+      channel_domain: 'https://datarangers.finkapp.cn', // 替换为私有部署部署服务地址,
+      ab_channel_domain: 'https://datarangers.finkapp.cn',
+      cross_subdomain: true, //是否自动跨子域名识别用户
+      log: true, // 开启调试日志
+      enable_ab_test: true, // boolean类型，是否开启A/B实验功能
+    });
+    window.collectEvent('config', {
+        user_unique_id: window.CONFIG.userId || ''
+    });
+
+    window.collectEvent('start'); 
+    
+  </script>
+</body>
+
+</html>

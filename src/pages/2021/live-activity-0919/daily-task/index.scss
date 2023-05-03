@@ -1,0 +1,163 @@
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+body{
+    background:#360B0B;
+}
+.rule{
+    background: #360B0B url(https://pic.finkapp.cn/D9cJ3HR1DfJqRPIj7cLlMQ) no-repeat;
+    background-size: 100%;
+    padding-top: 7.15rem;
+    &-task{
+        height: 1.226667rem;
+        img{
+            display: block;
+            overflow: hidden;
+        }
+    }
+   &-box{
+     &__center{
+        background: #360B0B;
+        padding-bottom: .533333rem;
+     }
+   }
+   &-list{
+       padding:0 .16rem;
+       li{
+           height: 1.733333rem;
+           display:flex;
+           justify-content:start;
+           align-items:center;
+           border-bottom: 1px solid #5B1E1E;
+           p:nth-child(1){
+            font-size: .373333rem;
+            color: #F8CDAD;
+            letter-spacing: 1.1px;
+            font-weight: 600;
+            width: 1.2rem;
+            text-align: center;
+            margin-right: .266667rem;
+           }
+           p:nth-child(2){
+            width: 1.226667rem;
+            height: 1.226667rem;
+            border-radius: 100%;
+            margin-right: .746667rem;
+            background-image: linear-gradient(180deg, #FFDE96 0%, #A96A2D 100%);
+            padding: .053333rem;
+            overflow: hidden;
+            img{
+                border-radius: 100%;
+                width: 1.2rem;
+                height: 1.13rem;
+                overflow: hidden;
+                display: block;
+            }
+           }
+           p:nth-child(3){
+            font-size: .32rem;
+            color: #F8CDAD;
+            width: 3.2rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+           }
+           p:nth-child(4){
+            font-size: .32rem;
+            color: #F8CDAD;
+            flex:1;
+            text-align:right;
+            padding-right: .266667rem;
+            span{
+                display: block;
+            }
+           }
+       }
+       
+   }
+   &-empty{
+       font-size: .373333rem;
+       text-align: center;
+       background:#360B0B;
+       color: #A25D4A;
+       letter-spacing: .038933rem;
+       padding-top: .64rem;
+       img{
+           height: 5.28rem;
+           width: 7.546667rem;
+           margin: .8rem 0;
+           opacity: 0.5;
+       }
+   }
+}
+.tasklist{
+    padding:0 .24rem;
+    background: #360B0B;
+    height: 2rem;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    &-left{
+        width: 1.013333rem;
+        height: 1.013333rem;
+        margin-right: .293333rem;
+        img{
+            display: block;
+            overflow: hidden;
+        }
+    }
+    &-right{
+        flex:1;
+        height: 2rem;
+        border-bottom: 1px solid #441B1B;
+        display:flex;
+        justify-content:space-between;
+        align-items: center;
+        &__wen{
+            flex: 1;
+            img{
+                height: .3704rem;
+            }
+            p{
+                font-size: .24rem;
+                color: #A25D4A;
+                span{
+                    color: #DC9D72;
+                }
+            }
+        }
+        &__status{
+            width: 1.914667rem;
+            height: .685867rem;
+            margin-left: .4rem;
+        }
+        &__status1{
+            width: 1.914667rem;
+            height: .9144rem;
+            margin-left: .4rem;
+            background:url(../../../../../public/images/2021/live-activity-0919/stateImg4.png) no-repeat;
+            background-size: 1.914667rem .9144rem;
+            font-size: .266667rem;
+            color: #360B0B;
+            text-align:center;
+            padding-top: .48rem;
+        }
+        &__status2{
+            width: 1.914667rem;
+            height: .685867rem;
+            margin-left: .4rem;
+            background:url(../../../../../public/images/2021/live-activity-0919/stateImg2.png) no-repeat;
+            background-size: 1.914667rem .685867rem;
+        }
+        &__status3{
+            width: 1.914667rem;
+            height: .685867rem;
+            margin-left: .4rem;
+            background:url(../../../../../public/images/2021/live-activity-0919/stateImg3.png) no-repeat;
+            background-size: 1.914667rem .685867rem;
+        }
+    }
+}

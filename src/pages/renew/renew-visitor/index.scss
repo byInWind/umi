@@ -1,0 +1,54 @@
+body {
+    background-color: #1A1A1A;
+}
+
+.wrapper {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: -1.3rem;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    padding: 1.388889rem .555556rem 1.111111rem;
+
+    &__avatar-border {
+        width: 1.222222rem;
+        height: 1.222222rem;
+        border-radius: 100px;
+        background-size: 100%;
+        margin-right: .388889rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__avatar {
+        background-size: cover;
+        width: 96%;
+        height: 96%;
+        border-radius: 100%;
+    }
+
+    &__right {
+        color: white;
+        font-size: 12px;
+
+        &-name {
+            font-size: 20px;
+            vertical-align: bottom;
+            padding-right: .111111rem;
+        }
+
+        &-icon {
+            width: .555556rem;
+            height: .555556rem;
+        }
+
+        &-p {
+            padding-top: .166667rem;
+        }
+    }
+
+}

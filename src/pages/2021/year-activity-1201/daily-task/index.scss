@@ -1,0 +1,195 @@
+body {
+  background: #050302;
+}
+
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+.rule {
+  background: #050302 url(https://pic.finkapp.cn/ju4VnJsR00NqRPIj7cLlMQ) no-repeat;
+  background-size: 100%;
+  .banner {
+    position: relative;
+    padding-top: 10.7rem;
+    &-img1 {
+      width: 100%;
+    }
+    &-img2 {
+      width: 1.813333rem;
+      z-index: 1;
+      position: absolute;
+      right: 0.106667rem;
+      top: 7.12rem;
+    }
+    &-img3 {
+      width: 1.466667rem;
+      z-index: 1;
+      position: absolute;
+      right: 0.266667rem;
+      top: 9.2rem;
+    }
+  }
+  &-task {
+    width: 7.650667rem;
+    height: 1.375733rem;
+    margin: 0.133333rem auto 0.266667rem auto;
+    img {
+      display: block;
+      overflow: hidden;
+      margin: 0 auto;
+    }
+  }
+  &-box {
+    padding: 0 5.5px;
+  }
+  &-list {
+    padding: 0 0.16rem;
+    li {
+      height: 1.733333rem;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      border-bottom: 1px solid #5b1e1e;
+      p:nth-child(1) {
+        font-size: 0.373333rem;
+        color: #f8cdad;
+        letter-spacing: 1.1px;
+        font-weight: 600;
+        width: 1.2rem;
+        text-align: center;
+        margin-right: 0.266667rem;
+      }
+      p:nth-child(2) {
+        width: 1.226667rem;
+        height: 1.226667rem;
+        border-radius: 100%;
+        margin-right: 0.746667rem;
+        background-image: linear-gradient(180deg, #ffde96 0%, #a96a2d 100%);
+        padding: 0.053333rem;
+        overflow: hidden;
+        img {
+          border-radius: 100%;
+          width: 1.2rem;
+          height: 1.13rem;
+          overflow: hidden;
+          display: block;
+        }
+      }
+      p:nth-child(3) {
+        font-size: 0.32rem;
+        color: #f8cdad;
+        width: 3.2rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      p:nth-child(4) {
+        font-size: 0.32rem;
+        color: #f8cdad;
+        flex: 1;
+        text-align: right;
+        padding-right: 0.266667rem;
+        span {
+          display: block;
+        }
+      }
+    }
+  }
+  &-empty {
+    font-size: 0.373333rem;
+    text-align: center;
+    background: #360b0b;
+    color: #a25d4a;
+    letter-spacing: 0.038933rem;
+    padding-top: 0.64rem;
+    img {
+      height: 5.28rem;
+      width: 7.546667rem;
+      margin: 0.8rem 0;
+      opacity: 0.5;
+    }
+  }
+  &-footer {
+    width: 100%;
+    opacity: 0.77;
+    font-size: 0.32rem;
+    transform: scale(0.8);
+    color: #c2ae87;
+    letter-spacing: 1.49px;
+    text-align: center;
+    padding: 0.4rem 0;
+  }
+}
+.tasklist {
+  padding: 0 0.24rem;
+  background: url(../../../../../public/images/2021/year-activity-1201/taskItemBg.png) no-repeat;
+  background-size: 9.76rem 2.293333rem;
+  height: 2.293333rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.266667rem;
+  &-left {
+    width: 1.013333rem;
+    height: 1.013333rem;
+    margin-right: 0.293333rem;
+    img {
+      display: block;
+      overflow: hidden;
+    }
+  }
+  &-right {
+    flex: 1;
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__wen {
+      flex: 1;
+      img {
+        height: 0.3704rem;
+      }
+      p {
+        font-size: 0.24rem;
+        color: #ffdcb1;
+        span {
+          color: #372b21;
+        }
+      }
+    }
+    &__status {
+      width: 1.914667rem;
+      height: 0.685867rem;
+      margin-left: 0.4rem;
+    }
+    &__status1 {
+      width: 1.914667rem;
+      height: 0.9144rem;
+      margin-left: 0.4rem;
+      background: url(../../../../../public/images/2021/year-activity-1201/stateImg4.png) no-repeat;
+      background-size: 1.914667rem 0.9144rem;
+      font-size: 0.266667rem;
+      color: #372b21;
+      text-align: center;
+      padding-top: 0.48rem;
+    }
+    &__status2 {
+      width: 1.914667rem;
+      height: 0.685867rem;
+      margin-left: 0.4rem;
+      background: url(../../../../../public/images/2021/year-activity-1201/stateImg2.png) no-repeat;
+      background-size: 1.914667rem 0.685867rem;
+    }
+    &__status3 {
+      width: 1.914667rem;
+      height: 0.685867rem;
+      margin-left: 0.4rem;
+      background: url(../../../../../public/images/2021/year-activity-1201/stateImg3.png) no-repeat;
+      background-size: 1.914667rem 0.685867rem;
+    }
+  }
+}

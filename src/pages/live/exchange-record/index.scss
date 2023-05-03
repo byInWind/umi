@@ -1,0 +1,168 @@
+html:not([data-scale]) .am-tabs-default-bar-top .am-tabs-default-bar-tab::after {
+  height: 0;
+}
+
+.am-tabs-tab-bar-wrap {
+  width: 56%;
+  padding-top: .169082rem;
+  margin: 0 auto;
+}
+
+.am-tabs-default-bar-underline {
+  border: none;
+}
+
+.am-tabs-default-bar-tab {
+  color: #A9A9A9;
+  font-size: .386473rem;
+  height: 24px;
+  margin-top: 8px;
+}
+
+.am-tabs-default-bar-tab-active {
+  color: #1a1a1a !important;
+  font-size: .434783rem !important;
+  font-weight: bold;
+}
+
+.none {
+  display: none !important;
+}
+
+.center {
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  position: relative;
+  min-height: 100%;
+  overflow: hidden;
+
+  &-back {
+    position: absolute;
+    z-index: 99;
+    width: 1.5rem;
+    height: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_icon {
+      width: .57971rem;
+    }
+  }
+
+  &-toptext {
+    position: relative;
+    padding: 0 0.4rem;
+    font-size: 12px;
+    color: #7C7C7C;
+    text-align: center;
+    margin-bottom: .724638rem;
+  }
+
+  &-tabLine {
+    width: 15px;
+    height: 6px;
+    background-color: #1a1a1a;
+    border-radius: 100px;
+    left: 34.3%;
+    top: 0;
+    position: absolute;
+  }
+
+  &-tabLine2 {
+    left: 62%;
+  }
+
+  &-tab {
+    position: relative;
+    padding: .483092rem;
+  }
+
+  &-tab2 {
+    position: relative;
+    padding: .483092rem .483092rem 0;
+  }
+}
+
+.taskList {
+  &-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #7C7C7C;
+    padding-bottom: .57971rem;
+
+    &__left {
+      display: flex;
+      align-items: center;
+    }
+
+    &__icon {
+      width: .869565rem;
+      margin-right: .289855rem;
+    }
+
+    &__title {
+      font-size: .338164rem;
+      color: #1a1a1a;
+    }
+
+    &__time {
+      padding-top: .193237rem;
+      font-size: .338164rem;
+    }
+
+    &__right {
+      line-height: 1;
+      text-align: right;
+      font-size: .338164rem;
+
+      &-icon {
+        width: .362319rem;
+      }
+
+      &-heart {
+        padding-bottom: .29rem;
+      }
+
+    }
+
+  }
+}
+
+.expList {
+  display: flex;
+  justify-content: space-between;
+  color: #7C7C7C;
+  padding: 0 .386473rem;
+  font-size: 12px;
+  padding-bottom: .434783rem;
+
+  &-left {
+    font-weight: bold;
+    font-size: .338164rem;
+    color: #1A1A1A;
+  }
+
+  &-icon {
+    width: .362319rem;
+    vertical-align: middle;
+    margin-right: 3px;
+  }
+
+  &-p {
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+  }
+
+  &-userName {
+    padding-right: .193237rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 11em;
+    text-align: right;
+  }
+}

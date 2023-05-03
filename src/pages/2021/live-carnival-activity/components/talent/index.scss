@@ -1,0 +1,92 @@
+.talent {
+  min-height: 6.675556rem;
+  &__list {
+    margin-top: .151111rem;
+    position: relative;
+    &-item {
+      width: 8.524444rem;
+      height:1.36rem;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      margin-bottom: .257778rem;
+      padding-bottom: .213333rem;
+      border-bottom: 2px solid #5A79F0;
+      align-items: center;
+    }
+    &-index {
+      height:1.36rem;
+      font-weight: 500;
+      font-size: .444444rem;
+      color: #5A79F0;
+      line-height:1.36rem;
+      margin-right: .52rem;
+    }
+    &-avatar {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-right: .817778rem;
+      margin-left: .24rem;
+      &-img {
+        width: 1.422222rem;
+        height: 1.422222rem;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+      &-user { 
+        width: 1.422222rem;
+        height: 1.422222rem;
+        border-radius: 50%;
+        border: 2px solid #B3CCFE;
+      }
+      &-play { 
+        width: .435556rem;
+        height: .435556rem;
+        position: absolute;
+        bottom: 0;
+        left: .92rem;
+      }
+    }
+    &-info {
+      line-height: .4rem;
+      color: #5A79F0;
+      font-weight: 500;
+      font-size: .355556rem;
+      width: 3.111111rem;
+      text-overflow:ellipsis;
+      overflow:hidden;
+      white-space:nowrap;
+      &-name {
+        padding-top: .142222rem;
+        color: #5A79F0;
+        font-weight: 500;
+        font-size: .355556rem;
+        width: 3.111111rem;
+        text-overflow:ellipsis;
+        overflow:hidden;
+        white-space:nowrap;
+      }
+      &-tip {
+        font-size: .284444rem;
+        font-weight: 400;
+        width: 3.111111rem;
+        margin-top: .144444rem;
+        text-overflow:ellipsis;
+        overflow:hidden;
+        white-space:nowrap;
+        letter-spacing: 0;
+      }
+    }
+
+    &-diamonds {
+      color: #5A79F0;
+      font-weight: 400;
+      font-size: .355556rem;
+      width: 3.111111rem;
+      overflow:hidden;
+      text-align: right;
+    }
+  }
+}

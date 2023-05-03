@@ -1,0 +1,78 @@
+.mark {
+  &-img {
+    width: .4rem;
+    height: .4rem;
+    margin-left: 0.1rem;
+    vertical-align: top
+  }
+  &-img-new {
+    width: 1.16667rem !important;
+    display: block;
+    transform: scale(1.3);
+    margin-top: -3px;
+  }
+
+  &-text {
+    font-size: 12px;
+    line-height: 1.5;
+    height: 0;
+
+    &__p {
+      padding-bottom: 5px;
+    }
+  }
+}
+
+.vip-info {
+  font-family: Ping Fang SC;
+  width: 2.96rem;
+  height: 1.833333rem;
+  float: left;
+  margin-bottom: .32rem;
+
+  &__left,
+  &__right {
+    position: absolute;
+    height: 1.533333rem;
+    display: inline-block;
+  }
+
+  &__left {
+    &-img {
+      width: .773333rem;
+      height: .773333rem;
+      // padding: 0.15rem 0;
+      line-height: .773333rem;
+      border-radius: 50%;
+      background-color: #1A1A1A;
+      text-align: center;
+
+      img {
+        width: .32rem;
+        height: .32rem
+      }
+    }
+  }
+
+  &__right {
+    margin-left: 1.04rem;
+    color: #1A1A1A;
+
+    &-title {
+      margin-bottom: .053333rem;
+      font-size: .426667rem;
+      font-weight: 600;
+    }
+
+    &-tip {
+      margin-bottom: .053333rem;
+      font-weight: 400;
+      font-size: .32rem;
+    }
+  }
+}
+
+.vip-wapper:nth-child(even) {
+  display: inline-block;
+  margin-left: .8rem;
+}

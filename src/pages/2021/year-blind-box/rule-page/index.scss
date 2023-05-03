@@ -1,0 +1,118 @@
+body {
+  background: #f5213f;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+.rule {
+  background: #f5213f url(https://pic.finkapp.cn/NZvLkPgLdQVqRPIj7cLlMQ) no-repeat top center;
+  background-size: 100%;
+  .banner {
+    position: relative;
+    padding-top: 11.2rem;
+    &-img1 {
+      width: 100%;
+    }
+    &-img3 {
+      width: 1.493333rem;
+      z-index: 1;
+      position: absolute;
+      right: 0.213333rem;
+      top: 8.906667rem;
+    }
+  }
+  &-tab {
+    padding: 0 0.213333rem;
+    position: relative;
+    &__img {
+      height: 1.173333rem;
+      position: relative;
+      &-box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 1.173333rem;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        span {
+          flex: 1;
+        }
+      }
+      img {
+        display: block;
+        overflow: hidden;
+      }
+    }
+    &__img2 {
+      margin-top: 0.373333rem;
+    }
+  }
+  &-box {
+    background: #fef3df;
+    border: 2px solid #f9d97c;
+    border-radius: 10px;
+    margin: 0.213333rem 0.213333rem 0 0.213333rem;
+    &__img {
+      padding: 0 0.346667rem;
+      img {
+        display: block;
+        overflow: hidden;
+        margin: 0 auto;
+      }
+    }
+    &__h3 {
+      font-size: 0.426667rem;
+      font-weight: 600;
+      text-align: center;
+      color: #74421d;
+      line-height: 0.586667rem;
+      padding: 0.48rem 0 0.266667rem 0;
+    }
+    &__content {
+      padding: 0.426667rem 0.266667rem;
+      li {
+        text-align: justify;
+        padding: 0 0.4rem;
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.346667rem;
+        color: #74421d;
+        line-height: 0.6rem;
+        margin-top: 0.1rem;
+        span {
+          width: 0.533333rem;
+        }
+        .spot_main {
+          margin-top: 0.213333rem;
+        }
+        p {
+          flex: 1;
+        }
+      }
+      li.title {
+        font-weight: 600;
+        margin-top: 0.2rem;
+      }
+    }
+  }
+  &-footer {
+    width: 100%;
+    font-size: 0.32rem;
+    transform: scale(0.8);
+    color: #c2ae87;
+    letter-spacing: 1.49px;
+    text-align: center;
+    padding: 0.4rem 0;
+  }
+}
+
+.top12 {
+  padding-top: 0.8rem !important;
+}
+.padidng20 {
+  padding: 0 0.533333rem;
+}

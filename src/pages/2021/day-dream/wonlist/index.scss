@@ -1,0 +1,51 @@
+body {
+  background: #F4F4F4;
+  height: auto;
+  font-family: Ping Fang SC;
+  padding: .8rem .64rem;
+}
+.wonlist{
+  li{
+    display: flex;
+    border-bottom:1px solid #DEDEDE;
+    padding: .346667rem 0;
+    justify-content:space-between;
+    align-items:center;
+    overflow: hidden;
+  }
+  &-left{
+    flex: 3;
+    display: flex;
+    p{
+      width: 1.333333rem;
+      height: 1.333333rem;
+      border-radius: 100%;
+      border: 1px solid #232323;
+      background-color:#D8D8D8;
+      margin-left: .32rem;
+      overflow: hidden;
+      img{
+        width: 1.333333rem;
+        height: 1.333333rem;
+        display: block;
+        overflow: hidden;
+      }
+    }
+  }
+  &-right{
+    flex: 1;
+    align-items:center;
+    padding-right: .32rem;
+    p:first-child{
+      font-size: .373333rem;
+      color:#202020;
+      margin-top: .106667rem;
+    }
+    p:last-child{
+      font-size: .533333rem;
+      color:#202020;
+      font-weight: 600;
+      margin-top: .106667rem;
+    }
+  }
+}

@@ -1,0 +1,90 @@
+.vip-price {
+  position: relative;
+  padding-bottom: 0.36rem;
+  width: 2.36rem;
+  border-radius: .426667rem;
+  border: 1px solid RGB(64, 64, 64, 0.7);
+  text-align: center;
+  display: inline-block;
+  margin-right: .25rem;
+
+  &__discount {
+    position: absolute;
+    top: -0.3rem;
+    left: 0;
+    padding: 0 0.05rem;
+    min-width: 0.9rem;
+    height: .56rem;
+    line-height: .56rem;
+    background-color: #FF4040;
+    border-radius: .106667rem;
+    color: #fff;
+    font-size: .32rem;
+    text-align: center;
+  }
+
+  &__time {
+    font-size: .373333rem;
+    color: RGB(169, 169, 169);
+    margin-top: .394rem;
+  }
+
+  &__price {
+    color: RGB(26, 26, 26);
+    margin: .1rem 0 0 0;
+
+    &-unit {
+      font-size: .533333rem;
+      line-height: .8rem
+    }
+
+    &-number {
+      font-weight: 600;
+      font-size: .8rem;
+    }
+  }
+
+  &__original {
+    text-decoration: line-through;
+    font-size: .24rem;
+    color: RGB(169, 169, 169);
+    height: .24rem;
+  }
+
+  &__average {
+    font-size: .426667rem;
+    color: RGB(169, 169, 169);
+    margin-top: .226667rem;
+  }
+}
+
+
+.vip-price:last-child {
+  margin-right: 0;
+}
+
+.vip {
+  &__tip {
+    margin: .24rem 0 0 0.2rem;
+    font-size: .32rem;
+    font-family: 'Ping Fang SC';
+    color: RGB(140, 140, 140, 0.5);
+    text-align: left;
+    line-height: .373333rem;
+    height: .8rem
+  }
+}
+
+.active {
+  &-border {
+    border: 3px solid #FF4040;
+  }
+
+  &-fontColor {
+    color: #FF4040 !important
+  }
+
+  &-discount{
+    left: -2px;
+  }
+}

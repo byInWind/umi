@@ -1,0 +1,109 @@
+.variety {
+  min-height: 6.675556rem;
+  &__list {
+    margin-top: .151111rem;
+    position: relative;
+    &-item {
+      width: 8.524444rem;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      margin-bottom: .257778rem;
+      padding-bottom: .213333rem;
+      border-bottom: 2px solid #5A79F0;
+      align-items: center;
+    }
+    &-index {
+      height: 1.635556rem;
+      font-weight: 500;
+      font-size: .444444rem;
+      color: #5A79F0;
+      line-height:1.635556rem;
+      margin-right: .1rem;
+    }
+    &-avatar {
+      position: relative;
+      margin-left: .311111rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-right: .595556rem;
+      &-img {
+        width: 1.422222rem;
+        height: 1.422222rem;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+      &-user { 
+        width: 1.422222rem;
+        height: 1.422222rem;
+        border-radius: 50%;
+        border: 2px solid #B3CCFE;
+      }
+      &-play { 
+        width: .435556rem;
+        height: .435556rem;
+        position: absolute;
+        bottom: 0;
+        left: .92rem;
+      }
+    }
+    &-info {
+      line-height: .4rem;
+      color: #5A79F0;
+      font-weight: 500;
+      font-size: .355556rem;
+      letter-spacing: 0;
+      &-name {
+        padding-top: .142222rem;
+        color: #5A79F0;
+        font-weight: 500;
+        font-size: .355556rem;
+      }
+      &-tip {
+        font-size: .266667rem;
+        font-weight: 400;
+        width: 4rem;
+        margin-top: .2rem;
+        letter-spacing: 0;
+      }
+    }
+
+    &-new {
+      line-height: .355556rem;
+      color: #5A79F0;
+      font-weight: 500;
+      font-size: .355556rem;
+      letter-spacing: 0;
+      &-name {
+        padding-top: .142222rem;
+        color: #5A79F0;
+        font-weight: 500;
+        font-size: .355556rem;
+      }
+      &-tip {
+        font-size: .266667rem;
+        font-weight: 400;
+        width: 5rem;
+        margin-top: .2rem;
+        letter-spacing: 0;
+      }
+    }
+
+    &-menu {
+      color: #5A79F0;
+      font-weight: 400;
+      font-size: .355556rem;
+      letter-spacing: 0;
+    }
+
+    &-diamonds {
+      color: #5A79F0;
+      font-weight: 400;
+      font-size: .355556rem;
+      width: 3.111111rem;
+      overflow:hidden;
+      text-align: right;
+    }
+  }
+}

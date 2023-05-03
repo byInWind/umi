@@ -1,0 +1,59 @@
+#app {
+  position: relative;
+}
+.drainage {
+  
+  &__content {
+    height: 100%;
+    img {
+      display: block;
+    }
+    &-imgBg {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      height: auto;
+      width: 100%;
+      z-index: 0;
+    }
+    &-imgContent {
+      position: absolute;
+      width: 100%;
+      z-index: 2;
+    }
+    &-handle {
+      position: absolute;
+      // bottom: .8rem;
+      top: 16rem;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    &-btn {
+      width: 6.093333rem;
+      height: 1rem;
+      background: #f00;
+      // animation: zoom 1s infinite;
+      color: #fff;
+      border-radius: .666667rem;
+      text-align: center;
+      line-height: 1rem;
+      z-index: 3;
+    }
+
+    @keyframes zoom {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.1);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+  }
+}

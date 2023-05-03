@@ -1,0 +1,218 @@
+.task{
+    .color-pink{
+        background: rgba(254,134,87,0.15);
+    }
+    .color-pink__active{
+        background-image: linear-gradient(139deg, #FE945C 0%, #FE7E54 100%);
+    }
+    .color-violet{
+        background: rgba(196,136,233,0.15);
+    }
+    .color-violet__active{
+        background-image: linear-gradient(-48deg, #DD7EE3 0%, #8E9EF6 49%, #A1E6FF 100%);
+    }
+    .colo-red{
+        background-image: url(../../../../../../public/images/anchor/liveBar.png);
+        height: 1.066667rem;
+        background-size: 8.64rem 1rem;
+        background-repeat:no-repeat;
+    }
+    .colo-red__activebg{
+        background-image: url(../../../../../../public/images/anchor/liveBarActive.png);
+        height: 1.066667rem;
+        background-size: 8.64rem 1rem;
+        background-repeat:no-repeat;
+        position: relative;
+
+    }
+    .color-red__active{
+        background-image: linear-gradient(-42deg, #FF1C33 4%, #FF7B6F 100%);
+    } 
+    .animation{
+        animation: animate-positive 0.5s;
+    }
+    &-ul{
+        padding:0 .266667rem 2.133333rem .266667rem ;
+    }
+    &-li{
+        height: 4.4rem;
+        background: #FFFFFF;
+        border-radius: .32rem;
+        margin-bottom: .266667rem;
+        padding: .4rem;
+        .task-progress{
+            border-radius: .8rem;
+            margin-top: 1.333333rem;
+            .progress-bar{
+                height: 0.32rem;
+                border-radius: .8rem;
+                position: relative;
+                .progress-bar__value{
+                    height: .533333rem;
+                    line-height: .533333rem;
+                    font-size: .32rem;
+                    color: #FFFFFF;
+                    position:absolute;
+                    right: -0.266667rem;
+                    top: -.933333rem;
+                    border-radius: 5px;
+                    min-width: 1.466667rem;
+                    text-align: center;
+                    padding:0 .133333rem;
+                }
+                .progress-bar__red::after {
+                    content: "";
+                    border-top: .133333rem solid #FF1B32;
+                    border-left: .133333rem solid transparent;
+                    border-right: .133333rem solid transparent;
+                    position: absolute;
+                    bottom: -0.123333rem;
+                    right: 20%;
+                }
+                .progress-bar__pink::after {
+                    content: "";
+                    border-top: .133333rem solid #FF7747;
+                    border-left: .133333rem solid transparent;
+                    border-right: .133333rem solid transparent;
+                    position: absolute;
+                    bottom: -0.123333rem;
+                    right: 20%;
+                }
+                .progress-bar__pinkvalue::after {
+                    content: "";
+                    border-top: .133333rem solid #DB7FED;
+                    border-left: .133333rem solid transparent;
+                    border-right: .133333rem solid transparent;
+                    position: absolute;
+                    bottom: -0.123333rem;
+                    right: 20%;
+                }
+                .progress-bar__dot{
+                    width: .48rem;
+                    height: .48rem;
+                    position: absolute;
+                    top:-25%;
+                    left:-2px;
+                    border-radius: 100%;
+                }
+                .progress-bar__dot::after{
+                    width: .266667rem;
+                    height: .266667rem;
+                    content: "";
+                    border-radius: 100%;
+                    position: absolute;
+                    top: .106667rem;
+                    left: .106667rem;
+                    background: #FFFFFF;
+                }
+                .progress-bar__num{
+                    font-size: .32rem;
+                    color: #1A1A1A;
+                    position: absolute;
+                    right:0;
+                    top:1rem;
+                    min-width: .8rem;
+                    text-align: right;
+                }
+            }
+            .progress-livebar{
+                height: 1.066667rem;
+                border-radius: 0;
+                margin-top: .933333rem;
+                .progress-bar__value{
+                    top: -.633333rem;
+                }
+                .progress-bar__num{
+                    bottom: -.133333rem;
+                }
+            }
+        }
+       
+       
+        .task-time{
+            display: flex;
+            justify-content: space-between;
+            margin-top: .533333rem;
+            span{
+                flex:1;
+                text-align: center;
+                font-size: .373333rem;
+                color: #A9A9A9;
+            }
+            span:first-child{
+                text-align: left;
+            }
+            span:last-child{
+                text-align: right;
+            }
+            span.color-black{ 
+                color: #1a1a1a
+            } 
+        }
+        .task-livetime{
+            margin-top: .266667rem; 
+        }
+        .task-livetime-progress{
+            margin-top: .266667rem; 
+        }
+       
+    }
+    &-title{
+        display: flex; 
+        align-items: center;
+        &__img {
+          height: .906667rem;
+          width: .906667rem;
+          display: block;
+          overflow: hidden;
+        }
+        &__name{
+          font-size: .48rem;
+          color: #404040;
+          padding-left: .266667rem;
+        }
+      }
+    
+    @-webkit-keyframes animate-positive{
+        0% { width: 0; }
+    }
+    @keyframes animate-positive{
+        0% { width: 0; }
+    }
+}
+.task-footer{
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 17px 0px rgba(171,171,171,0.3);
+    margin-top: .266667rem;
+    display: flex;
+    align-items: center;
+    padding: .533333rem .666667rem;
+    position:fixed;
+    bottom: 0;
+    left:0;
+    z-index: 999;
+    &__box{ 
+        display: flex;
+        justify-content: start;
+        align-items: center;           
+    }
+    &__img{
+        width: 1.173333rem;
+        height: 1.173333rem;
+        display: block;
+        overflow: hidden
+    }
+    &__content{
+        font-size: .373333rem;
+        color: #1A1A1A;
+        margin-left: .373333rem;
+        p:last-child{
+            margin-top: .133333rem;
+        }
+        span{
+            font-size: .373333rem;
+            color: #FF4040;
+        }
+    }
+}

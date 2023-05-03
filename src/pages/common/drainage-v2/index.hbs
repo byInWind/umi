@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="utf-8" />
+  <title>{{title}}</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,viewport-fit=cover">
+  {{!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" /> --}}
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="description" content=" " />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="/favicon.ico">
+</head>
+
+<script async src="https://lf3-data.volccdn.com/obj/data-static/log-sdk/collect/collect-autotrack-rangers-v4.1.54.js"></script>
+{{!-- 安卓安装统计Alink --}}
+<script src="https://lf16-data.bytepluscdn.com/obj/data-static-sg/data/dp/openapp/index.1.4.1.onpremise.cn.js"></script>
+<script type="text/javascript">    
+(function(win, export_obj) {
+    win['TeaAnalyticsObject'] = export_obj;
+    if (!win[export_obj]) {
+        function _collect() {
+            _collect.q.push(arguments);
+        }
+        _collect.q = _collect.q || [];
+        win[export_obj] = _collect;            
+    }
+    win[export_obj].l = +new Date();
+})(window, 'collectEvent');
+
+  // 调用客户端方法,客户端分享传值
+  function getShareDetail(){
+    var sUserAgent = navigator.userAgent.toLowerCase();
+    var bIsAndroid = sUserAgent.match(/android/i) == "android";
+    var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+    var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+
+    var message = { 
+      shareTitle: '', // 分享标题
+      shareDescription: '', // 分享描述
+      message: '',// 分享信息
+      shareImageUrl: '',// 分享图片地址
+      url: ''// 分享地址
+    };
+
+    if (bIsAndroid) {
+
+      AndroidAPP&&AndroidAPP.getShareDetail(JSON.stringify(message));
+      
+    } else if ( bIsIphoneOs || bIsIpad) {
+      window.webkit.messageHandlers.getShareDetail.postMessage(message);
+    }
+
+    return JSON.stringify(message)
+  }
+
+  function handlerShare(fun) {
+    if (fun) {
+      fun()
+    }
+  }
+
+  getShareDetail()
+</script>
+
+<body>
+  <div id="app"></div>
+  <script??? type="text/javascript">
+    window.CONFIG = {{#if config}}{{{config}}};{{else}}{};{{/if}}
+  </script???>
+  <script>
+    const nodeEnv = window.CONFIG && window.CONFIG.nodeEnv || '';
+    window.collectEvent('init', {
+      app_id: nodeEnv === 'production' ? 10000010 : 10000011,
+      auto_report: true, //是否开启预置事件采集
+      report_channel: 'cn', //数据上报地址
+      channel_domain: 'https://datarangers.finkapp.cn', // 替换为私有部署部署服务地址,
+      ab_channel_domain: 'https://datarangers.finkapp.cn',
+      cross_subdomain: true, //是否自动跨子域名识别用户
+      log: true, // 开启调试日志
+      enable_ab_test: true, // boolean类型，是否开启A/B实验功能
+    });
+    window.collectEvent('config', {
+        user_unique_id: window.CONFIG.userId || ''
+    });
+
+    window.collectEvent('start'); 
+
+    window.onload = function (){
+
+      var alink = new window.Alink({
+        token: 'sujcXVjc',
+        domain: 'https://a.finkapp.cn/',
+        onReady: function () {
+          // 执行初始化操作或者事件绑定
+          console.log('alink ready')
+          var m = this;
+          var button = document.getElementById('downloadButton');
+          if (button) {
+            button.onclick = function () {
+
+              m.invokeOrInstall();
+            };
+          }
+        },
+    })
+
+  }
+  </script>
+</body>
+
+</html>

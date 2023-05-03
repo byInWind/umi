@@ -1,0 +1,114 @@
+.result {
+  min-height: 13.92rem;
+
+  &__header {
+    position: absolute;
+    top: 4.16rem;
+    width: 8.2133rem;
+    margin: 0 .9067rem;
+    border: .04rem solid #190606;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &-avatar {
+      width: 1.9733rem;
+      border-right: .04rem solid #190606;
+
+      &--img {
+        width: 1.93rem;
+        height: 1.9733rem;
+        overflow: hidden;
+      }
+
+      &--name {
+        text-align: center;
+        font-size: .32rem;
+        border-top: .04rem solid #190606;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 0.1rem;
+        vertical-align: middle;
+        color: #190606;
+      }
+    }
+
+    &-title {
+      width: 6.25rem;
+      height: 2.55rem;
+      padding: .42rem;
+      font-size: .4267rem;
+      font-weight: 600;
+      color: #190606;
+      line-height: .5867rem;
+      background: linear-gradient(180deg, #FFFFFD, #FFCBC5);
+    }
+  }
+
+  &__content {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    &-code {
+      right: .9333rem;
+      bottom: 3.4667rem;
+      position: absolute;
+
+      &--detail {
+        width: 1.5733rem;
+        height: 1.5733rem;
+      }
+      &--font {
+        margin-top: .1067rem;
+        width: 1.6267rem;
+        height: .8rem;
+      }
+
+    }
+
+    &-send {
+      position: absolute;
+      bottom: 1.4rem;
+      right: 2.3rem;
+      width: 5.3121rem;
+      height: 1.328rem;
+      text-align: center;
+      line-height: 1.328rem;
+      color: #fff;
+      font-size: .5843rem;
+      font-weight: 600;
+    }
+
+    &-friends {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: .72rem;
+      height: 2.88rem;
+      border-radius: .24rem 0 0 .24rem;
+      background: linear-gradient(270deg, #FF9A83, #ffffff);
+      text-align: center;
+      font-size: .3733rem;
+      padding-top: .1867rem;
+      font-weight: 500;
+      border: .0267rem solid #190606
+    }
+
+    &-footer {
+      position: absolute;
+      bottom: 0rem;
+      left: 3.7867rem;
+      text-align: left;
+      width: 100%;
+
+      img {
+        margin-top: .17rem;
+        width: 2.6667rem;
+        height: .6133rem;
+      }
+    }
+  }
+}

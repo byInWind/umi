@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.center {
+  margin: 100px;
+  padding: 10px 10px 30px;
+  border: 2px solid;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px;
+  font-size: 20px;
+}
+
+.h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  font-size: 20px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  width: 80%;
+  text-align: center;
+}
+
+.add {
+  border: 2px solid;
+  border-radius: 40px;
+  width: 75px;
+  height: 42px;
+  line-height: 42px;
+  background: gray;
+  color: white;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.list {
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 80%;
+}
+
+.list .item {
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  border-bottom: 1px dashed;
+}
+
+.list .close {
+  display: inline-block;
+  border: 1px solid;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 100px;
+  position: absolute;
+  right: 0;
+}
+
+.list .ready {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  border: 1px solid;
+  width: 30px;
+  height: 30px;
+
+}
+
+.list .count-box {
+  display: flex;
+  color: gray;
+  font-size: 18px;
+  font-weight: bold;
+  justify-content: space-between;
+}
+
+.list .count-box .clear {
+  border: 1px solid;
+  padding: 0 6px;
+  border-radius: 5px;
+}
+
+.none {
+  display: none !important;
+}

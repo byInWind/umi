@@ -1,0 +1,209 @@
+.outResult {
+  min-height: 13.92rem;
+  &__header {
+    text-align: center;
+    height: 1.8592rem;
+  }
+
+  &__content {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 0 .6rem 0 .9067rem;
+    height: 100%;
+
+    &-footer {
+      position: absolute;
+      bottom: -0.8rem;
+      text-align: left;
+      width: 100%;
+      left: 3.7867rem;
+
+      img {
+        margin-top: .17rem;
+        width: 2.6667rem;
+        height: .6133rem;
+      }
+    }
+
+    &-send {
+      position: absolute;
+      bottom: 0.2rem;
+      right: 2rem;
+      width: 5.7rem;
+      height: 1.4rem;
+      text-align: center;
+      line-height: 1.328rem;
+      color: #fff;
+      font-size: .5843rem;
+      font-weight: 600;
+      
+    }
+
+    &-heart {
+      position: absolute;
+      left: 50%;
+      top: 0.1rem;
+      transform: translate(-50%, 0);
+      width: 1.3067rem;
+      height: .8533rem;
+    }
+
+    &-compare {
+      position: relative;
+      display: flex;
+      width: 8.2rem;
+      height: 3.5467rem;
+      padding: .3453rem;
+      margin-top: 4.7467rem;
+      background: #fff;
+      border: .04rem solid #190606;
+      background: linear-gradient(180deg, #FFFFFD, #FFCBC5);
+      // box-shadow: 3px 3px 0px 0px rgba(255, 52, 120, 0.75);
+
+      &--score {
+        width: 2.7224rem;
+        text-align: center;
+
+        .desc {
+          // margin: .3586rem 0 0 0;
+          font-size: .425rem;
+          color: #111;
+          font-weight: 600;
+        }
+
+        .score {
+          margin-top: .32rem;
+          font-size: 1.6rem;
+          font-weight: 600;
+          color: #FF5C5C;
+          text-shadow: 4px 0px 0px rgba(24, 2, 2, 0.91);
+        }
+      }
+    }
+
+    &-avatar {
+      border: .04rem solid #190606;
+
+      &-img {
+        width: 2.1333rem;
+        height: 2.1333rem;
+        overflow: hidden;
+      }
+
+      &-name {
+        width: 2.1333rem;
+        height: .5333rem;
+        text-align: center;
+        font-size: .3187rem;
+        color: #190606;
+        line-height: .3rem;
+        border-top: .04rem solid #190606;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 0.1rem;
+        vertical-align: middle;
+      }
+    }
+
+    &-rewardStatus {
+      position: relative;
+      height: 1.0933rem;
+      width: 8.24rem;
+      line-height: 1.0933rem;
+      margin: .2133rem 0;
+      text-align: center;
+      background: #FFDDC5;
+      font-size: .3733rem;
+      font-weight: 500;
+      color: #190606;
+
+      &-icon {
+        width: .5067rem;
+        height: .6133rem;
+        position: absolute;
+        left: .6667rem;
+        top: .15rem;
+      }
+
+      &-img {
+        width: 1.6267rem;
+        height: 1.5733rem;
+        position: absolute;
+        right: -0.48rem;
+        top: -0.2933rem;
+      }
+    }
+
+    &-reward {
+      margin-top: .05rem;
+      height: 1.328rem;
+      color: #CC3131;
+      font-size: .3453rem;
+      line-height: 1.328rem;
+      background: #FFECEC;
+      text-align: center;
+      font-weight: 600;
+      box-shadow: .0233rem .0233rem 0px .0233rem #ff9999;
+    }
+
+    &-boy {
+      margin: .2rem .3984rem .3718rem 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .user {
+        width: 1.9rem;
+        height: 2rem;
+        box-shadow: 3px 4px 0px 0px #2e121e;
+        overflow: hidden;
+        border: 0.04rem solid #190606;
+        background: #eee;
+        img {
+          width: 1.9rem;
+          height: 2rem;
+        }
+      }
+    }
+
+    &-caihong {
+      text-align: center;
+      font-size: .3733rem;
+      font-weight: 500;
+      color: #120E0B
+    }
+  }
+
+  &__share {
+    // width: 100%;
+    position: relative;
+    margin-top: 1.8rem;
+    margin-left: 1.0757rem;
+
+
+    &-friends {
+      position: absolute;
+      bottom: .2656rem;
+      right: 0;
+      width: 2.9216rem;
+      height: .7968rem;
+      border-radius: .1328rem 0 0 .1328rem;
+      background: #fff;
+      text-align: center;
+      font-size: .425rem;
+      font-weight: 600;
+      line-height: .7968rem;
+
+      span {
+        color: #ff4040;
+        margin-left: .0531rem
+      }
+    }
+  }
+
+
+}

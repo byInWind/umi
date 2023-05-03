@@ -1,0 +1,146 @@
+
+.details{
+    background: #fff;
+    padding:0 .533333rem 0.8rem .533333rem; 
+    &-head{
+        &__user{
+            margin: .8rem auto;
+            width: 2.88rem;
+            height: 2.88rem;
+            border-radius: 100%;
+            border: .16rem solid #EFEFEF;
+            background-size: cover;
+            &-img{
+                width: 3.2rem;
+                border-radius: 100%;
+                display: block;
+                overflow: hidden;
+            }  
+        }
+        &__link{
+            font-size: .373333rem;
+            color: #1A1A1A;
+            text-align: right;
+            position: relative;
+            padding-right: .266667rem;
+            display: block;
+        &::after{
+            position: absolute;
+            right: 0;
+            top: .12rem;
+            content: '';
+            display: block;
+            width: .133333rem;
+            height: .133333rem;
+            border-left: 1PX solid #1a1a1a;
+            border-top: 1PX solid #1a1a1a;
+            transform: rotate( 135deg);
+           }    
+        }
+        &__progress{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            height: .746667rem;
+            margin-top: .4rem;
+            &-left{
+                font-size: .533333rem;
+                color: #1A1A1A;
+                font-weight: 600;
+            } 
+            &-right{
+                height: .426667rem;
+                background:rgba(255,64,64,0.1);
+                flex: 1;
+                border-radius: .533333rem;
+                margin-left: .266667rem;
+                overflow: hidden;
+            } 
+            &-bar{
+                height: .426667rem;
+                background-image: linear-gradient(270deg, #FF2B2B , #FFC88E);
+                border-radius: .533333rem;
+                animation: animate-positive 1s;
+            } 
+        }
+        &__value{
+            font-size: .373333rem;
+            color: #1A1A1A;
+            text-align:center;
+            margin-top: .266667rem;
+            span {
+                color: #FF4040;
+            }
+        }
+    }
+
+    &-box{
+        border-top: 1px solid #F2F2F2;
+        margin-top: .8rem;
+        &__head{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: .8rem;
+            p{
+                font-size: .426667rem;
+                color: #1A1A1A;
+                font-weight:bold;
+            }
+           a{
+                font-size: .373333rem;
+                color: #1A1A1A;
+                position: relative;
+                padding-right: .266667rem;
+                &::after{
+                    position: absolute;
+                    right: 0;
+                    top: .12rem;
+                    content: '';
+                    display: block;
+                    width: .133333rem;
+                    height: .133333rem;
+                    border-left: 1PX solid #1a1a1a;
+                    border-top: 1PX solid #1a1a1a;
+                    transform: rotate( 135deg);
+                   }
+            }
+        }
+        &__list{
+            width:100%;
+            overflow:hidden;
+            &-item{
+                width:25%;
+                float: left;
+                margin-top: .8rem;
+                img {
+                    width: 1.6rem;
+                    height: 1.6rem;
+                    display: block;
+                    overflow: hidden;
+                    margin:0 auto;
+                }
+                p {
+                    font-size: .32rem;
+                    color: #1A1A1A;
+                    text-align: center;
+                    margin-top: .533333rem;
+                }
+            }
+        }
+    }
+    @-webkit-keyframes animate-positive{
+        0% { width: 0; }
+    }
+    @keyframes animate-positive{
+        0% { width: 0; }
+    }
+}
+.gray { 
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+}

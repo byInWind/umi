@@ -1,0 +1,572 @@
+body {
+  background: #060C2C;
+  height: auto;
+  font-family: Ping Fang SC;
+}
+
+.fixed {
+  position: fixed !important;
+  bottom: 0px;
+  z-index: 9999;
+  width: 100%;
+  background: white;
+  padding: 20px 0;
+}
+
+.none {
+  display: none !important;
+}
+
+.ruleBtn a {
+  display: block;
+  background-color: #588af0;
+  border-radius: 100px 0 0 100px;
+  font-size: .338164rem;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  top: 1.6rem;
+  color: white;
+  padding: 4px 5px 4px 8px;
+}
+
+.invita {
+  &__won-text{
+    font-size: .483092rem;
+    color: #202020;
+    padding: .845411rem 0 .652174rem;
+    text-align: center;
+  }
+
+  &__header {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+
+    background-color: #031533;
+  }
+
+  img {
+    display: block;
+  }
+
+  &__content {
+    position: relative;
+    margin: 0 .2657rem .2657rem;
+    padding: .338164rem .483092rem;
+    border-radius: .444444rem;
+    background-color: #fff;
+    text-align: center;
+    color: #202020;
+    font-size: 14px;
+
+    img {
+      width: 100%;
+    }
+
+    &-time-p {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: .57971rem 0;
+    }
+
+    &-time {
+      line-height: 1;
+      font-size: 0.57971rem;
+      padding: 0 2px;
+    }
+
+    &-btnbox {
+      width: 100%;
+
+    }
+
+    &-btn {
+      height: 1.038647rem;
+      line-height: 1.038647rem;
+      width: 8.429952rem;
+      color: #fff;
+      font-size: .338164rem;
+      background-color: #FF4040;
+      border-radius: 1.25rem;
+      margin: 0 auto;
+      text-align: center;
+
+      &:focus {
+        background-color: #FF4040;
+      }
+    }
+
+    &-btn-gray {
+      background-color: #878787;
+      height: 1.038647rem;
+      line-height: 1.038647rem;
+      width: 8.429952rem;
+      color: #fff;
+      font-size: .338164rem;
+      border-radius: 1.25rem;
+      margin: 0 auto;
+      text-align: center;
+ }
+
+    &-tips {
+      padding-top: .3rem;
+      color: #A9A9A9;
+      font-size: .338164rem;
+    }
+
+    &-tips-yz {
+      padding-top: .3rem;
+      font-size: .338164rem;
+      color: #7CB3EF;
+      text-align: left;
+    }
+
+    &-tips-red {
+      padding-top: .3rem;
+      font-size: .338164rem;
+      color: #FF4040;
+      text-align: left;
+      line-height: 1.4;
+      display: inline-block;
+      width: 92%;
+      vertical-align: middle;
+    }
+
+    &-warningIcon {
+      width: 12px !important;
+      height: 12px;
+      margin-right: 3px;
+      display: inline-block !important;
+    }
+
+  }
+
+  &__goldbox {
+    margin: .2657rem .31401rem;
+    position: relative;
+
+    &-title {
+      position: absolute;
+      top: .652174rem;
+      left: .458937rem;
+      color: #202020;
+      font-size: .483092rem;
+      font-weight: bold;
+    }
+
+    &-des {
+      position: absolute;
+      top: 1.280193rem;
+      left: .458937rem;
+      color: #202020;
+      font-size: .338164rem;
+    }
+
+    &-btn {
+      font-size: .338164rem;
+      color: #fff;
+      position: absolute;
+      right: 0.92rem;
+      top: 0.84rem;
+    }
+  }
+
+  &__mycodebox {
+    border-radius: 12px;
+    background-color: #fff;
+    height: 5.797101rem;
+    margin: 0 .2657rem .31401rem;
+    padding: .31401rem .458937rem;
+
+    &-top {
+      text-align: right;
+      height: 0.8rem;
+      color: #A9A9A9;
+      font-size: .338164rem;
+      position: relative;
+    }
+
+    &-title {
+      position: absolute;
+      font-size: .483092rem;
+      color: #202020;
+    }
+
+    &-text {
+      position: absolute;
+      top: 0.1rem;
+      right: 0;
+      font-size: .338164rem;
+      color: #232323;
+    }
+    &-rightIcon{
+      width: 6px;
+      display: inline-block !important;
+      margin-left: 2px;
+    }
+
+    &-line {
+      background-color: #EEEEEE;
+      height: 1px;
+    }
+  }
+
+  &__popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    &--box {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &--close {
+      position: absolute;
+      top: -2.5rem;
+      right: 0;
+      width: .966184rem;
+    }
+
+    &--mainbox {
+      position: relative;
+    }
+
+    &--main {
+      width: 7.971014rem;
+    }
+
+    &--copybtn {
+      position: absolute;
+      text-align: center;
+      left: 0.8rem;
+      bottom: 0.5rem;
+      width: 6.304348rem;
+      height: 1.038647rem;
+      line-height: 1.038647rem;
+      border-radius: 100px;
+      font-size: 14px;
+      color: #fff;
+      background-color: #FF4040;
+      animation: zoom 0.8s infinite;
+    }
+
+    @keyframes zoom {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.1);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    &--invitabtn {
+      position: absolute;
+      left: 0.8rem;
+      bottom: 1.2rem;
+      width: 6.304348rem;
+      height: 1.038647rem;
+    }
+
+    &--des {
+      position: absolute;
+      width: 100%;
+      bottom: 0.35rem;
+      font-size: .338164rem;
+      color: #202020;
+      text-align: center;
+    }
+
+    &--ava {
+      position: absolute;
+      top: 2.536232rem;
+      left: 1.256039rem;
+      width: 1.908213rem;
+      height: 1.908213rem;
+      border-radius: 200px;
+      border: 1px solid #232323;
+      background-color: #D8D8D8;
+      background-size: cover;
+    }
+
+    &-top {
+      position: relative;
+      background-color: rgba(255, 255, 255, 0.4);
+      color: white;
+      border-radius: 100px;
+      width: 5.410628rem;
+      height: 1.014493rem;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      margin-bottom: .458937rem;
+
+      &__ava {
+        display: inline-block;
+        width: 1.014493rem;
+        height: 1.014493rem;
+        border-radius: 200px;
+        border: 2px solid #232323;
+        background-color: #D8D8D8;
+        background-size: cover;
+      }
+
+      &__x {
+        font-size: 20px;
+        display: inline-block;
+        padding: 0 .193237rem;
+      }
+
+      &__text {
+        padding-left: .2657rem;
+        font-size: .338164rem;
+      }
+    }
+
+    &--title {
+      position: absolute;
+      font-size: .483092rem;
+      font-weight: bold;
+      color: #202020;
+      top: 2.2rem;
+      width: 100%;
+      text-align: center;
+    }
+
+    &--verification-title {
+      position: absolute;
+      font-size: .483092rem;
+      font-weight: bold;
+      color: #202020;
+      top: 0.6rem;
+      width: 100%;
+      text-align: center;
+    }
+
+    &--codeBox {
+      position: absolute;
+      left: 1.45rem;
+      font-size: 14px;
+      color: #202020;
+      top: 4.35rem;
+    }
+
+    &--goldCodeBox{
+      left: 1.1rem;
+    }
+
+    &--code {
+      position: absolute;
+      font-size: .531401rem;
+      font-weight: bold;
+      color: #202020;
+      width: 3.9rem;
+      top: 4.3rem;
+      left: 3.2rem;
+      text-align: center;
+    }
+
+    &--text {
+      position: absolute;
+      font-size: 12px;
+      color: #202020;
+      top: 5.9rem;
+      width: 100%;
+      text-align: center;
+    }
+
+    &--text2 {
+      top: 6.4rem;
+    }
+
+    &--verification-text {
+      position: absolute;
+      font-size: 12px;
+      color: #202020;
+      top: 4.4rem;
+      width: 100%;
+      text-align: center;
+    }
+
+    &--againabtn {
+      position: absolute;
+      text-align: center;
+      left: 0.8rem;
+      bottom: 0.5rem;
+      width: 6.304348rem;
+      height: 1.038647rem;
+      line-height: 1.038647rem;
+      border-radius: 100px;
+      font-size: 14px;
+      color: #fff;
+      background-color: #FF4040;
+    }
+
+    &--cancelBtn {
+      position: absolute;
+      text-align: center;
+      left: 0.5rem;
+      bottom: 0.5rem;
+      width: 3.140097rem;
+      height: 1.038647rem;
+      line-height: 1.038647rem;
+      border-radius: 100px;
+      font-size: 14px;
+      color: #fff;
+      background-color: #202020;
+    }
+
+    &--submitBtn {
+      position: absolute;
+      text-align: center;
+      right: 0.5rem;
+      bottom: 0.5rem;
+      width: 3.140097rem;
+      height: 1.038647rem;
+      line-height: 1.038647rem;
+      border-radius: 100px;
+      font-size: 14px;
+      color: #fff;
+      background-color: #FF4040;
+    }
+
+    &-input {
+      position: absolute;
+      top: 2.318841rem;
+      left: .676329rem;
+      border: 1px solid #202020;
+      border-radius: 8px;
+      width: 1.207729rem;
+      height: 1.207729rem;
+      line-height: 1.207729rem;
+      text-align: center;
+    }
+
+    &-input2 {
+      left: 2.487923rem;
+    }
+
+    &-input3 {
+      left: 4.299517rem;
+    }
+
+    &-input4 {
+      left: 6.111111rem;
+    }
+  }
+}
+
+.list {
+  position: relative;
+  margin-top: .2657rem;
+
+  &__wonIcon{
+    width: .676329rem;
+    position: absolute;
+    top: 0;
+    right: .241546rem;
+  }
+
+  &__box {
+    display: inline-block;
+    width: 4.15rem;
+    height: .990338rem;
+    margin-right: .217391rem;
+    margin-bottom: .289855rem;
+    position: relative;
+
+    &-user {
+      position: absolute;
+      left: .144928rem;
+      top: .193237rem;
+      width: .57971rem;
+      height: .57971rem;
+      border-radius: 2rem;
+      border: 1px solid #232323;
+      background-color: gray;
+      background-size: cover;
+    }
+
+    &-user2 {
+      left: .869565rem;
+    }
+
+    &-code-box {
+      position: absolute;
+      top: .13rem;
+      left: 1.8rem;
+      font-size: 12px;
+      color: #202020;
+      transform: scale(0.9)
+    }
+
+    &-code {
+      font-size: .338164rem;
+    }
+  }
+
+  &__box:nth-child(even) {
+    margin-right: 0;
+  }
+}
+
+.am-button.am-button-active {
+  background-color: #FF4040;
+}
+
+.appointment {
+  &__info {
+    position: relative;
+    background-color: #031533;
+    width: 100%;
+
+    &--user1 {
+      position: absolute;
+      top: 8rem;
+      width: 1.8rem;
+      height: 1.8rem;
+      left: 0.8rem;
+    }
+
+    &--user2 {
+      position: absolute;
+      top: 8rem;
+      width: 1.8rem;
+      height: 1.8rem;
+      left: 3.0rem;
+    }
+
+    &--user3 {
+      position: absolute;
+      top: 8rem;
+      width: 1.8rem;
+      height: 1.8rem;
+      left: 5.2rem;
+    }
+
+    &--user4 {
+      position: absolute;
+      top: 8rem;
+      width: 1.8rem;
+      height: 1.8rem;
+      left: 7.3rem;
+    }
+
+  }
+
+}

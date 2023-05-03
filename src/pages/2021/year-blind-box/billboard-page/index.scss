@@ -1,0 +1,20 @@
+body {
+  background: #f5213f;
+  position: relative;
+}
+.main {
+  background: #f5213f url(https://pic.finkapp.cn/NZvLkPgLdQVqRPIj7cLlMQ) no-repeat top center;
+  background-size: 100%;
+  padding-bottom: 1.653333rem;
+  .header {
+    position: relative;
+    padding-top: 11.2rem;
+    &-icon {
+      width: 1.493333rem;
+      z-index: 1;
+      position: absolute;
+      right: 0.213333rem;
+      top: 8.906667rem;
+    }
+  }
+}

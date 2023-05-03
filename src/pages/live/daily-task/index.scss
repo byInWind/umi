@@ -1,0 +1,310 @@
+.none {
+  display: none !important;
+}
+
+.center {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: .3865rem .3865rem 0 0;
+  position: relative;
+  min-height: 100%;
+  background-image: linear-gradient(180deg, #fffecf 16%, #fffead, #ffa977);
+
+  &-tabBox {
+    width: 5rem;
+    margin: 0 auto;
+    padding: .5556rem 0 .3623rem;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+
+    &__button {
+      font-size: .4348rem;
+      color: #c29461;
+      position: relative;
+
+      &-tabLine {
+        width: 1.0628rem;
+        height: 4px;
+        background-color: #1a1a1a;
+        border-radius: 100px;
+        margin: .1932rem auto 0;
+      }
+    }
+
+    &__button-active {
+      font-size: .4831rem;
+      font-weight: bold;
+      color: #1a1a1a;
+    }
+  }
+
+  &-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  &-tab {
+    position: relative;
+    padding: .483092rem .4rem;
+    background: #fefffe;
+    margin: 0 .2899rem;
+    border-radius: .2899rem .2899rem 0px 0px;
+    overflow-y: scroll;
+  }
+
+  &-tab2 {
+    position: relative;
+    padding: 0 .4rem 0;
+    margin: 0 .2899rem;
+    background: #fefffe;
+    border-radius: .2899rem .2899rem 0px 0px;
+    height: 80vh;
+  }
+
+  &-toptext {
+    position: relative;
+    font-size: 12px;
+    color: #7C7C7C;
+    margin-bottom: .724638rem;
+
+    &__color {
+      position: relative;
+      z-index: 2;
+      background: rgba(255, 227, 50, 0.3);
+      color: #1a1a1a;
+    }
+
+    &__bottom-color {
+      position: absolute;
+      z-index: -1;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: .144928rem;
+      background: linear-gradient(46deg, rgba(255, 30, 53, 0.71) 2%, rgba(254, 141, 78, 0.77) 89%);
+    }
+  }
+
+  &-title {
+    width: 4.5rem;
+    display: block;
+    padding: .483092rem 0.2rem;
+  }
+
+  &-listBox {
+    min-height: 5.74rem;
+    padding: 0 0.1rem;
+
+    .list {
+      display: inline-block;
+      width: 25%;
+      padding: 0 0.1rem 0.4rem;
+      text-align: center;
+      font-size: 12px;
+
+      &-iconBox {
+        position: relative;
+        border-radius: 10px;
+
+        &__active {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+        }
+
+        &__p {
+          position: absolute;
+          bottom: 0rem;
+          width: 1.0rem;
+          right: 0rem;
+          font-style: italic;
+          font-size: 12px;
+          font-weight: bold;
+          background-size: 100%;
+          background-repeat: no-repeat;
+        }
+
+        &__number {
+          font-size: 20px;
+        }
+      }
+
+      &-name {
+        color: #404040;
+        padding: 0.1rem 0;
+
+        &__color {
+          color: #ff4040
+        }
+      }
+
+      &-day {
+        color: #1a1a1a;
+        font-weight: bold;
+      }
+    }
+
+
+  }
+
+  &-btnBox {
+    position: relative;
+
+    &__signBtnImg {
+      width: 90%;
+      display: block;
+      margin: 0.3rem auto 0;
+    }
+
+    &__signBtn {
+      position: absolute;
+      width: 90%;
+      top: 0;
+      left: 5%;
+      height: 1.4rem;
+    }
+  }
+}
+
+.tips {
+  position: absolute;
+  color: white;
+  text-align: center;
+  height: 2.3rem;
+  padding: 0.5rem 1rem;
+}
+
+.taskList {
+  &-list {
+    height: 1.73913rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: .386473rem;
+
+    &__left {
+      display: flex;
+    }
+
+    &__title {
+      font-size: .3865rem;
+      font-weight: bold;
+      color: #1a1a1a;
+      padding-bottom: .193237rem;
+    }
+
+    &__rewardBox {
+      display: flex;
+      align-items: center;
+    }
+
+    &__rewardDesc {
+      font-size: 14px;
+      color: #7f7f7f;
+      margin-right: 3px;
+    }
+
+    &__rewardNum {
+      font-size: 14px;
+      color: #ff4040;
+      font-weight: bold;
+    }
+
+    &__icon {
+      width: 1.256rem;
+      margin-right: .2415rem;
+
+    }
+
+    &__heart {
+      width: .5797rem;
+    }
+
+    &__num {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    &__right {
+      width: 2.3188rem;
+      height: .9662rem;
+      line-height: .9662rem;
+      text-align: center;
+      font-size: .3865rem;
+      font-weight: 500;
+      color: #a9a9a9;
+    }
+
+    &__receiveBtnBox {
+      padding: 1px;
+      background-image: linear-gradient(46deg, rgba(255, 30, 53, 0.71) 2%, rgba(254, 141, 78, 0.77) 89%);
+      border-radius: 22px;
+    }
+
+    &__receiveBtn {
+      width: 100%;
+      height: 100%;
+      border-radius: 22px;
+      background: white;
+      color: #ff4040;
+    }
+
+    &__toComplete {
+      background-color: #ff4040;
+      color: #fff;
+      border-radius: .289855rem;
+    }
+
+    &__noComplete {
+      background: #ededed;
+      border-radius: 22px;
+      color: #a9a9a9;
+    }
+  }
+}
+
+.myToast {
+  position: fixed;
+  z-index: 99;
+  width: 5.1208rem;
+  padding: .4831rem;
+  background: rgba(26, 26, 26, 0.80);
+  border-radius: 12px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-2.5604rem, -2.2947rem);
+  color: white;
+  text-align: center;
+  line-height: 1;
+
+  &-title {
+    font-size: .4348rem;
+    font-weight: 500;
+    line-height: 1;
+  }
+
+  &-img {
+    width: 1.4976rem;
+    margin-top: .3865rem;
+    line-height: 1;
+  }
+
+  &-name {
+    font-size: .3865rem;
+    font-weight: 500;
+    text-align: center;
+    color: #ffdc3a;
+    margin-top: .1932rem;
+    line-height: 1;
+  }
+
+  &-tips {
+    margin-top: .2899rem;
+    line-height: 1;
+    font-size: 12px;
+  }
+}

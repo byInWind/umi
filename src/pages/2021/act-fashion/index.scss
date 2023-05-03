@@ -1,0 +1,219 @@
+img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  pointer-events: none;
+}
+
+.wrapper {
+  color: white;
+  text-align: center;
+  line-height: 1;
+
+  .mainImg {
+    position: absolute;
+    top: 0;
+  }
+
+  .page-box {
+    position: relative;
+    margin-top: 12.6rem;
+    width: 9rem;
+    margin-left: 0.5rem;
+    z-index: 2;
+    font-size: 0;
+    padding: 0.5rem 0 0.1rem;
+    background-color: #2a2a2a;
+
+    .user-info__ranking {
+      position: absolute;
+      width: 0.6rem;
+      line-height: 0.6rem;
+      height: 0.6rem;
+      color: #404040;
+      font-size: 14px;
+      right: 0.28rem;
+      top: 0.05rem;
+      z-index: 99;
+
+      img {
+        position: absolute;
+        z-index: -1;
+      }
+    }
+
+    .user_count {
+      img {
+        position: absolute;
+        z-index: -1;
+        width: 4rem;
+      }
+    }
+
+    .user-info__avatar {
+      position: relative;
+      width: 1.7rem;
+      height: 1.65rem;
+      display: inline-block;
+      border-radius: 10rem;
+
+      .img {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+
+    .avatar {
+      width: 88%;
+      height: 88%;
+      margin-top: 8%;
+      display: inline-block;
+      border-radius: 10rem;
+      background-size: cover;
+    }
+
+    .limit_length {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      font-size: 12px;
+    }
+
+    &__top {
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid #777676;
+      .user-info {
+        &__avatar {
+          width: 2.7rem;
+          height: 2.7rem;
+        }
+
+        &__count-box {
+          position: relative;
+          width: 30%;
+          margin-left: 35%;
+
+          &__count {
+            position: absolute;
+            top: 0.05rem;
+            left: 0;
+            width: 100%;
+            transform: scale(0.8);
+            color: black;
+            font-size: 12px;
+          }
+        }
+
+        &__name {
+          font-size: 16px;
+          padding: 0.1rem 0;
+        }
+      }
+    }
+
+    &__center {
+      border-bottom: 1px solid #777676;
+      padding: 0.5rem 0 0;
+
+      .user-info {
+        width: 33.3%;
+        display: inline-block;
+        padding-bottom: 0.3rem;
+
+        &__avatar {
+          width: 1.9rem;
+          height: 1.9rem;
+        }
+
+        &__ranking {
+          width: 0.5rem;
+          line-height: 0.5rem;
+          height: 0.5rem;
+          font-size: 13px;
+          top: -0.02rem;
+          right: 0.15rem;
+
+        }
+
+        &__name {
+          width: 94%;
+          margin-left: 3%;
+          padding: 0.2rem;
+          min-height: 0.7rem;
+        }
+
+        &__count-box {
+          position: relative;
+          width: 70%;
+          margin-left: 15%;
+
+          &__count {
+            position: absolute;
+            top: 0.05rem;
+            left: 0;
+            color: #404040;
+            width: 100%;
+            transform: scale(0.7);
+            display: inline-block;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    &__bottom {
+      padding-top: 0.4rem;
+      text-align: left;
+
+      .user-info {
+        width: 25%;
+        display: inline-block;
+        padding-bottom: 0.3rem;
+        text-align: center;
+
+        &__avatar {
+          width: 1.6rem;
+          height: 1.6rem;
+        }
+
+        &__ranking {
+          width: 0.5rem;
+          line-height: 0.5rem;
+          height: 0.5rem;
+          font-size: 12px;
+          top: -0.06rem;
+          right: 0.06rem;
+          transform: scale(0.8);
+        }
+
+        &__count-box {
+          position: relative;
+          width: 80%;
+          margin-left: 10%;
+
+          &__count {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            transform: scale(0.7);
+            top: -0;
+            font-size: 12px;
+            color: #404040;
+          }
+
+          img {
+            height: 0.33rem;
+          }
+        }
+
+        &__name {
+          width: 94%;
+          margin-left: 3%;
+          padding: 0.2rem 0.2rem 0.1rem;
+          min-height: 0.6rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+.star {
+  min-height: 6.675556rem;
+  &__list {
+    margin-top: .151111rem;
+    position: relative;
+    &-item {
+      width: 8.524444rem;
+      height: 2.542222rem;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: .257778rem .444444rem 0;
+      margin-bottom: .222222rem;
+      background-image: url('https://pic.finkapp.cn/CCJ7MnLuJnNqRPIj7cLlMQ');
+      background-repeat:no-repeat;
+      background-size:cover;
+      align-items: center;
+    }
+    &-index {
+      font-weight: 500;
+      font-size: .444444rem;
+      color: #5A79F0;
+    }
+    &-avatar {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      &-img {
+        width: 1.422222rem;
+        height: 1.422222rem;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+      &-user { 
+        width: 1.422222rem;
+        height: 1.422222rem;
+        border-radius: 50%;
+        border: 2px solid #B3CCFE;
+      }
+      &-play { 
+        width: .435556rem;
+        height: .435556rem;
+        position: absolute;
+        bottom: .75rem;
+        left: .92rem;
+      }
+      &-name {
+        margin-top: .142222rem;
+        color: #5A79F0;
+        font-weight: 500;
+        font-size: .32rem;
+        width: 3.111111rem;
+        text-overflow:ellipsis;
+        overflow:hidden;
+        white-space:nowrap;
+      }
+    }
+    &-info {
+      &-item {
+        width: 4.551111rem;
+        height: .444444rem;
+        background-color: #E0FCFF;
+        color: #5A79F0;
+        font-size: .32rem;
+        border-radius: .444444rem;
+        padding-left: .186667rem;
+        line-height: .5rem;
+        margin-bottom: .32rem;
+        text-overflow:ellipsis;
+        overflow:hidden;
+        white-space:nowrap;
+      }
+    }
+  }
+}

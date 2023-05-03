@@ -1,0 +1,147 @@
+.none {
+  display: none !important;
+}
+
+.body {
+  background-color: #ff0024;
+  overflow: hidden;
+  position: relative;
+
+  &-mainImg {
+    position: absolute;
+  }
+
+  .close {
+    width: 1.014493rem;
+    height: 1.014493rem;
+    position: absolute;
+    top: 0.2rem;
+    right: 0.2rem;
+  }
+
+  .center {
+    width: 9.613527rem;
+    min-height: 5rem;
+    position: relative;
+    margin: 2.173913rem auto 0;
+    padding-top: .289855rem;
+    background: white;
+    border-radius: .507246rem .507246rem 0 0;
+
+    &-rightIcon {
+      width: .120773rem;
+      vertical-align: middle;
+    }
+
+    &-header {
+      padding: 0 .386473rem;
+      font-size: .338164rem;
+
+      &__box {
+        font-weight: bold;
+      }
+
+      &__num {
+        font-size: .483092rem;
+      }
+
+      &__heart {
+        width: .434783rem;
+        margin-left: 2px;
+      }
+
+      &__data {
+        color: #1A1A1A;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      &__time {
+        color: #A9A9A9;
+        margin-top: .120773rem;
+      }
+    }
+
+    &-intro {
+      margin-top: 0.4rem;
+      padding: 0 .386473rem;
+      font-size: .338164rem;
+      color: #A9A9A9;
+
+      &__title {
+        font-weight: bold;
+        color: #1A1A1A;
+        padding-bottom: .289855rem;
+      }
+
+      &__list {
+        line-height: 1.4;
+        padding-bottom: 0.2rem;
+      }
+    }
+
+    &-exchangebox {
+      margin: 0.2rem auto;
+      width: 92%;
+    }
+  }
+}
+
+.exchangebox {
+  background-color: #fff;
+  border-radius: 8px;
+  display: inline-block;
+  padding-bottom: 10px;
+  margin: 0.05rem;
+  text-align: center;
+  width: 4.3rem;
+  box-shadow: 0 0 8px #eee;
+
+  &-mainImg {
+    width: 2.608696rem;
+    height: 1.642512rem;
+    margin: .193237rem .289855rem 0;
+  }
+
+  &-title {
+    font-size: .386473rem;
+    line-height: .386473rem;
+    padding-top: .289855rem;
+    padding-bottom: .144928rem;
+    font-weight: 500;
+    color: #1a1a1a;
+  }
+
+  &-desc {
+    font-size: 12px;
+    line-height: 14px;
+    color: #A9A9A9;
+  }
+
+  &-bottom {
+    margin-top: .193237rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 12px;
+    text-align: left;
+  }
+
+  &-heart {
+    width: .34rem;
+    vertical-align: middle;
+  }
+
+  &-btn {
+    display: flex;
+    width: 1.73913rem;
+    height: .869565rem;
+  }
+
+  &-num {
+    font-weight: bold;
+    display: inline-block;
+    padding-bottom: 3px;
+  }
+}

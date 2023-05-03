@@ -1,0 +1,142 @@
+.rewardPool {
+  min-height: 13.92rem;
+  .am-list-footer {
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 1.4667rem;
+  }
+  .am-list-item.am-input-item {
+    width: 100%;
+  }
+
+  &__search {
+    display: flex;
+    height: 1.12rem;
+    line-height: 1.0624rem;
+    border-radius: .5312rem;
+    border: .0267rem solid #190606;
+    margin: .2933rem;
+    margin-bottom: .12rem;
+    background: #fff;
+    overflow: hidden;
+    border: .0267rem solid #190606;
+
+    .icon {
+      margin: .27rem 0 0 .2312rem;
+      color: #999;
+      font-weight: bold;
+    }
+
+    .am-list-item.am-input-item {
+      padding-left: .1328rem;
+    }
+  }
+
+  &__header {
+    position: relative;
+    text-align: center;
+    margin: 0 0 .6773rem 0;
+    height: 2rem;
+
+    &-friends {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: .72rem;
+      height: 1.6533rem;
+      border-radius: .24rem 0 0 .24rem;
+      background: linear-gradient(270deg, #FF9A83, #ffffff);
+      text-align: center;
+      font-size: .3733rem;
+      padding-top: .1867rem;
+      font-weight: 500;
+      border: .0267rem solid #190606
+    }
+  }
+
+  &__list {
+    border: 0.04rem solid #190606;
+    padding: 1.8rem .4867rem .2933rem .5867rem;
+    margin: .2933rem .2933rem 0 .2933rem;
+    background: #fff;
+    height:  100%;
+    &-container {
+      background: #fff;
+      overflow: scroll;
+      height:  100%;
+      min-height: 13rem;
+    }
+
+    &-item {
+
+      position: relative;
+      width: 8.2rem;
+      height: 1.76rem;
+      display: flex;
+      border: .04rem solid #190606;
+      background: linear-gradient(180deg, #FFFFFD, #FFCBC5);
+      // box-shadow: 3px 3px 0px 0px rgba(35, 7, 7, 0.75);
+      margin-bottom: 0.2rem;
+
+      &--rewarded {
+        position: absolute;
+        right: 0;
+        top: 0;
+
+      }
+
+      &--avatar {
+        width: 1.69rem;
+        height: 1.69rem;
+        overflow: hidden;
+        border-right: .04rem solid #190606;
+        img {
+          width: 1.69rem;
+          height: 1.69rem;
+        }
+      }
+
+      &--reward {
+        margin-top: .1rem;
+        margin-left: .1867rem;
+        width: 5.8521rem;
+        font-weight: 600;
+        font-size: .3187rem;
+        color: #190606;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: .4533rem;
+      }
+
+      &--name {
+        margin-left: .1867rem;
+        width: 6rem;
+        font-size: .4267rem;
+        font-weight: 600;
+        line-height: .5867rem;
+        color: #190606;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      &--tip {
+        margin-left: .1867rem;
+        width: 5.6521rem;
+        font-size: .32rem;
+        color: #190606;
+      }
+
+      &--finish {
+        position: absolute;
+        top: 0;
+        right: .1333rem;
+        width: .9333rem;
+        height: .9867rem;
+      }
+
+    }
+  }
+
+}

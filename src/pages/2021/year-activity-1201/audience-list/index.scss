@@ -1,0 +1,186 @@
+body {
+  background: #050302;
+}
+.rule {
+  background: #050302 url(https://pic.finkapp.cn/ju4VnJsR00NqRPIj7cLlMQ) no-repeat;
+  background-size: 100%;
+  .banner {
+    position: relative;
+    padding-top: 11.2rem;
+    &-img3 {
+      width: 1.88rem;
+      z-index: 1;
+      position: absolute;
+      right: 0.266667rem;
+      top: 9rem;
+    }
+  }
+
+  &-kuang {
+    padding: 0 0.213333rem;
+    &__center {
+      width: 100%;
+      margin-top: 0.4rem;
+      background-image: linear-gradient(177deg, #2b2622 1%, #151412 41%);
+      border-left: 2px solid #38312a;
+      border-right: 2px solid #38312a;
+      position: relative;
+      box-sizing: border-box;
+      padding-bottom: 0.48rem;
+      min-height: 4rem;
+      .topbg {
+        position: absolute;
+        top: -0.23rem;
+        left: -2px;
+        z-index: 3;
+        width: 9.56rem;
+        height: 2.4rem;
+        background: url(../../../../../public/images/2021/year-activity-1201/topEdge.png) no-repeat;
+        background-size: 9.56rem 2.4rem;
+        pointer-events: none;
+      }
+      .bottombg {
+        position: absolute;
+        bottom: 0px;
+        left: -2px;
+        z-index: 3;
+        width: 9.56rem;
+        height: 1.866667rem;
+        background: url(../../../../../public/images/2021/year-activity-1201/bottomEdge.png) no-repeat;
+        background-size: 9.56rem 1.866667rem;
+        pointer-events: none;
+      }
+    }
+  }
+
+  &-list {
+    padding: 0.4rem 0.16rem 0 0.16rem;
+    li {
+      height: 1.733333rem;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      border-bottom: 1px solid #5f4320;
+      p:nth-child(1) {
+        font-size: 0.373333rem;
+        color: #f2d090;
+        font-weight: 600;
+        width: 1.2rem;
+        text-align: center;
+        margin-right: 0.266667rem;
+      }
+      p:nth-child(2) {
+        width: 1.226667rem;
+        height: 1.226667rem;
+        border-radius: 100%;
+        margin-right: 0.746667rem;
+        background-image: linear-gradient(180deg, #ffde96 0%, #a96a2d 100%);
+        padding: 0.053333rem;
+        overflow: hidden;
+        position: relative;
+        img {
+          border-radius: 100%;
+          width: 1.2rem;
+          height: 1.13rem;
+          overflow: hidden;
+          display: block;
+        }
+        img.video-icon {
+          border-radius: 100%;
+          width: 0.533333rem;
+          height: 0.533333rem;
+          overflow: hidden;
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin: -0.266667rem 0 0 -0.266667rem;
+          animation: living 3s infinite;
+        }
+      }
+      p:nth-child(3) {
+        font-size: 0.32rem;
+        color: #f2d090;
+        width: 3.2rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      p:nth-child(4) {
+        font-size: 0.32rem;
+        color: #f2d090;
+        flex: 1;
+        text-align: right;
+        padding-right: 0.266667rem;
+        span {
+          display: block;
+        }
+      }
+    }
+  }
+  &-list2 {
+    li:nth-child(1) {
+      p:nth-child(1) {
+        background: url(../../../../../public/images/2021/year-activity-1201/ranking1.png) no-repeat center;
+        background-size: 0.933333rem 0.849867rem;
+        height: 0.849867rem;
+        text-indent: -9999px;
+      }
+    }
+    li:nth-child(2) {
+      p:nth-child(1) {
+        height: 0.849867rem;
+        background: url(../../../../../public/images/2021/year-activity-1201/ranking2.png) no-repeat center;
+        background-size: 0.933333rem 0.849867rem;
+        text-indent: -9999px;
+      }
+    }
+    li:nth-child(3) {
+      p:nth-child(1) {
+        height: 0.849867rem;
+        background: url(../../../../../public/images/2021/year-activity-1201/ranking3.png) no-repeat center;
+        background-size: 0.933333rem 0.849867rem;
+        text-indent: -9999px;
+      }
+    }
+  }
+  &-footer {
+    width: 100%;
+    opacity: 0.77;
+    font-size: 0.32rem;
+    transform: scale(0.8);
+    color: #c2ae87;
+    letter-spacing: 1.49px;
+    text-align: center;
+    padding: 0.4rem 0;
+  }
+}
+
+.back-top {
+  width: 1.146667rem;
+  height: 1.146667rem;
+  position: fixed;
+  bottom: 0.8rem;
+  right: 0.266667rem;
+  z-index: 9999;
+  border-radius: 100%;
+  img {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+  }
+}
+@keyframes living {
+  0% {
+    transform: scale(1);
+    opacity: 0.32;
+  }
+  50% {
+    transform: scale(1.16);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.32;
+  }
+}

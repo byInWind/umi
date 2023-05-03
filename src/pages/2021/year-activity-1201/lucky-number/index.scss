@@ -1,0 +1,41 @@
+body {
+  background: #050302;
+}
+.hour {
+  background: #050302 url(https://pic.finkapp.cn/ju4VnJsR00NqRPIj7cLlMQ) no-repeat;
+  background-size: 100%;
+  padding-top: 11rem;
+  &-title {
+    width: 7.650667rem;
+    height: 1.401067rem;
+    margin: 0 auto;
+    img {
+      display: block;
+      overflow: hidden;
+    }
+  }
+  &-main {
+    height: 4.586667rem;
+    width: 9.306667rem;
+    background: url(https://pic.finkapp.cn/ZppM47D7z4dqRPIj7cLlMQ) no-repeat;
+    background-size: 9.306667rem 4.586667rem;
+    margin: 0.24rem auto 0 auto;
+    font-size: 0.346667rem;
+    color: #f2d090;
+    padding: 0 0.8rem;
+    letter-spacing: 1.49px;
+    p {
+      padding-top: 0.533333rem;
+    }
+  }
+  &-footer {
+    width: 100%;
+    opacity: 0.77;
+    font-size: 0.32rem;
+    transform: scale(0.8);
+    color: #c2ae87;
+    letter-spacing: 1.49px;
+    text-align: center;
+    padding: 0.4rem 0;
+  }
+}

@@ -1,0 +1,71 @@
+.answerFirstPage {
+  min-height: 15.7333rem;
+
+  &__content {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    &-avatar {
+      overflow: hidden;
+  
+      &-img {
+        position:absolute;
+        top: 3.35rem;
+        left: .18rem;
+        width: 2.51rem;
+        height: 2.5067rem;
+        border: .04rem solid #190606;
+        margin: .03rem 0 0 .03rem;
+        overflow: hidden;
+      }
+  
+      &-name {
+        position:absolute;
+        top: 3.2533rem;
+        left: 2.7rem;
+        width: 7.0667rem;
+        border-bottom: .04rem solid #190606;
+        font-size: .4267rem;
+        font-weight: 600;
+        color: #190606;
+        line-height: .8rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 0.2rem 0 0 .5rem;
+        vertical-align: middle;
+      }
+    }
+v  
+
+    &-send {
+      position: absolute;
+      bottom: 1.9rem;
+      right: 0;
+      width: 5.3121rem;
+      height: 1.328rem;
+      text-align: center;
+      line-height: 1.328rem;
+      color: #fff;
+      font-size: .5843rem;
+      font-weight: 600;
+    }
+
+    &-friends {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: .72rem;
+      height: 2.88rem;
+      border-radius: .24rem 0 0 .24rem;
+      background: linear-gradient(270deg, #ff9ac1, #ffffff);
+      text-align: center;
+      font-size: .3733rem;
+      padding-top: .1867rem;
+      font-weight: 500;
+      border: .0267rem solid #190606
+    }
+  }
+}
